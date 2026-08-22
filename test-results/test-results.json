@@ -1,0 +1,22 @@
+{
+  "TS033_AboutUsPageTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-22T17:33:59.868153800",
+    "screenshot" : "Screenshots\\TS033_AboutUsPageTest.png"
+  },
+  "TS036_MissionImpactTest" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-22T17:41:02.645798600",
+    "screenshot" : "Screenshots\\TS036_MissionImpactTest.png"
+  },
+  "AddRemoveGoalTest" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-22T18:05:30.130381600",
+    "screenshot" : "Screenshots\\AddRemoveGoalTest.png"
+  },
+  "BatchesCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-22T18:08:29.389018",
+    "screenshot" : "Screenshots\\BatchesCardTest.png"
+  }
+}
