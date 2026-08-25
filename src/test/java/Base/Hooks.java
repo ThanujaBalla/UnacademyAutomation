@@ -1,5 +1,6 @@
 package Base;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -91,7 +92,8 @@ public class Hooks {
 		/*
 		 * Store Cucumber result in JSON.
 		 */
-		TestResultManager.updateResult(scenario.getName(), status, screenshotPath);
+		String relativeScreenshotPath = "Screenshots" + File.separator + new File(screenshotPath).getName();
+		TestResultManager.updateResult(scenario.getName(), status, relativeScreenshotPath);
 
 		DriverManager.quitDriver();
 

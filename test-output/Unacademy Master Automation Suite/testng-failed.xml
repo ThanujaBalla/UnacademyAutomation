@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="Listeners.ExtentTestNGListener"/>
   </listeners>
-  <test thread-count="5" name="Unacademy Login and Signup Tests(failed)">
+  <test thread-count="5" name="Unacademy Goal Tests(failed)">
     <classes>
-      <class name="Runners.TestRunner">
+      <class name="Tests.AddRemoveGoalTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="finishReport"/>
+          <include name="verifyUserCanAddAndRemoveGoal"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Runners.TestRunner -->
+      </class> <!-- Tests.AddRemoveGoalTest -->
     </classes>
-  </test> <!-- Unacademy Login and Signup Tests(failed) -->
+  </test> <!-- Unacademy Goal Tests(failed) -->
 </suite> <!-- Failed suite [Unacademy Master Automation Suite] -->
