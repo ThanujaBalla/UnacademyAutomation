@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Unacademy Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners.ExtentTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Unacademy Login and Signup Tests(failed)">
+    <classes>
+      <class name="Runners.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="8 15"/>
+          <include name="finishReport"/>
+        </methods>
+      </class> <!-- Runners.TestRunner -->
+    </classes>
+  </test> <!-- Unacademy Login and Signup Tests(failed) -->
+  <test thread-count="5" name="Unacademy Goal tests(failed)">
     <classes>
       <class name="Tests.AddRemoveGoalTest">
         <methods>
@@ -10,6 +25,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- Tests.AddRemoveGoalTest -->
+      <class name="Tests.GoalPersistenceTest">
+        <methods>
+          <include name="verifyGoalIsRetainedAfterLogoutAndRelogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GoalPersistenceTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Unacademy Goal tests(failed) -->
+</suite> <!-- Failed suite [Unacademy Automation Suite] -->

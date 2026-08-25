@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import Pages.LoginPage;
+import Utilities.ConfigReader;
 import Utilities.DriverManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -29,7 +30,7 @@ public class logintest {
 
     @And("I enter a valid login mobile number")
     public void i_enter_a_valid_mobile_number() {
-        loginPage.enterMobileNumber("9493527869");
+        loginPage.enterMobileNumber(ConfigReader.getProperty("mobile_number"));
     }
 
     @And("I click on login button")
@@ -60,7 +61,7 @@ public class logintest {
     
     @And("I enter a valid email address")
     public void enter_email_address() {
-    	loginPage.enterEmailAddress("thanujaballahyd@gmail.com");
+    	loginPage.enterEmailAddress(ConfigReader.getProperty("email1"));
     	System.out.println("Entered valid email address.");
     }
     
@@ -122,7 +123,7 @@ public class logintest {
     
     @And("I enter an unregistered email")
     public void enter_valid_unregistered_emailid(){
-    	loginPage.enterEmailAddress("thanuja213@gmail.com");
+    	loginPage.enterEmailAddress(ConfigReader.getProperty("email2"));
     	System.out.println("Entered email formatted non existing email id.");
     }
     

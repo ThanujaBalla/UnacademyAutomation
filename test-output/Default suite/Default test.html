@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 22 18:03:21 IST 2026</td>
+<td>Started on:</td><td>Tue Aug 25 11:33:40 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>129 seconds (129961 ms)</td>
+<tr><td>Total time:</td><td>605 seconds (605362 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal()'><b>verifyUserCanAddAndRemoveGoal</b><br>Test class: Tests.AddRemoveGoalTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;__next&apos;]/header/div[1]/div[1]/div[2]/div/button (tried for 60 second(s) with 500 milliseconds interval)
+<td title='Tests.PracticeCardTest.verifyPracticeCard()'><b>verifyPracticeCard</b><br>Test class: Tests.PracticeCardTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 12344, ms:edgeOptions: {debuggerAddress: localhost:57807}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9749914f405bc204e363872270a53854
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal(AddRemoveGoalTest.java:216)
+Command: [9d03906fb7326f312f60650567d8d41d, clickElement {id=f.959C75868A4470083DEC4663BF94AFE9.d.CF2316197CDAE81FAA63F9773980C09B.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 9100, ms:edgeOptions: {debuggerAddress: localhost:62077}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62077/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9d03906fb7326f312f60650567d8d41d)] -&gt; xpath: //*[@id=&apos;__next&apos;]/div[1]/div[2]/div[2]/div[4]/div[2]/div[2]/a/span/div/div]
+Session ID: 9d03906fb7326f312f60650567d8d41d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Tests.PracticeCardTest.verifyPracticeCard(PracticeCardTest.java:63)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,16 +126,30 @@ Session ID: 9749914f405bc204e363872270a53854
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1695213452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1695213452'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;__next&apos;]/header/div[1]/div[1]/div[2]/div/button (tried for 60 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace582953485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582953485'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 12344, ms:edgeOptions: {debuggerAddress: localhost:57807}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9749914f405bc204e363872270a53854
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal(AddRemoveGoalTest.java:216)
+Command: [9d03906fb7326f312f60650567d8d41d, clickElement {id=f.959C75868A4470083DEC4663BF94AFE9.d.CF2316197CDAE81FAA63F9773980C09B.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 9100, ms:edgeOptions: {debuggerAddress: localhost:62077}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62077/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9d03906fb7326f312f60650567d8d41d)] -&gt; xpath: //*[@id=&apos;__next&apos;]/div[1]/div[2]/div[2]/div[4]/div[2]/div[2]/a/span/div/div]
+Session ID: 9d03906fb7326f312f60650567d8d41d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Tests.PracticeCardTest.verifyPracticeCard(PracticeCardTest.java:63)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,8 +177,492 @@ Session ID: 9749914f405bc204e363872270a53854
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>124</td>
-<td>Tests.AddRemoveGoalTest@24269709</td></tr>
+<td>4</td>
+<td>Tests.PracticeCardTest@429bffaa</td></tr>
+<tr>
+<td title='Tests.LoggedInGoalChangeTest.verifyLoggedInUserCanChangeGoal()'><b>verifyLoggedInUserCanChangeGoal</b><br>Test class: Tests.LoggedInGoalChangeTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: DrawerPaper (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 11560, ms:edgeOptions: {debuggerAddress: localhost:51074}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51074/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d6a16e342174a8faf9bb2818aa6e89
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Tests.LoggedInGoalChangeTest.verifyLoggedInUserCanChangeGoal(LoggedInGoalChangeTest.java:93)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1102941897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1102941897'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: DrawerPaper (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 11560, ms:edgeOptions: {debuggerAddress: localhost:51074}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51074/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d6a16e342174a8faf9bb2818aa6e89
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Tests.LoggedInGoalChangeTest.verifyLoggedInUserCanChangeGoal(LoggedInGoalChangeTest.java:93)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>66</td>
+<td>Tests.LoggedInGoalChangeTest@3d5c822d</td></tr>
+<tr>
+<td title='Runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001 - Verify joining Unacademy with valid mobile number and valid OTP", "Unacademy Sign Up"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [87ff73ebf3ef7124cf2cfc17d2f1dfc3, isElementDisplayed {id=f.6B5B8E935FDC2FB955D17F6C5BCC9102.d.7DD4CBA47B8F2A6B1DBADB30CAD3939D.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60702}, goog:processID: 22460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60702/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (87ff73ebf3ef7124cf2cfc17d2f1dfc3)] -&gt; xpath: //h1[contains(normalize-space(),&apos;Crack IIT JEE with Unacademy&apos;)]]
+Session ID: 87ff73ebf3ef7124cf2cfc17d2f1dfc3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at Pages.SignupPage.isHomePageDisplayed(SignupPage.java:96)
+	at StepDefinitions.signupTest.i_should_be_registered_successfully(signupTest.java:91)
+	at ✽.I should be registered successfully(file:///C:/Users/Balla.Thanuja/OneDrive%20-%20Coforge%20Limited/eclipse%20workspace/Selenium/UnacademyAutomation/src/test/java/Features/signup.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1631298894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631298894'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [87ff73ebf3ef7124cf2cfc17d2f1dfc3, isElementDisplayed {id=f.6B5B8E935FDC2FB955D17F6C5BCC9102.d.7DD4CBA47B8F2A6B1DBADB30CAD3939D.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60702}, goog:processID: 22460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60702/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (87ff73ebf3ef7124cf2cfc17d2f1dfc3)] -&gt; xpath: //h1[contains(normalize-space(),&apos;Crack IIT JEE with Unacademy&apos;)]]
+Session ID: 87ff73ebf3ef7124cf2cfc17d2f1dfc3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at Pages.SignupPage.isHomePageDisplayed(SignupPage.java:96)
+	at StepDefinitions.signupTest.i_should_be_registered_successfully(signupTest.java:91)
+	at ✽.I should be registered successfully(file:///C:/Users/Balla.Thanuja/OneDrive%20-%20Coforge%20Limited/eclipse%20workspace/Selenium/UnacademyAutomation/src/test/java/Features/signup.feature:10)
+</pre></div></td>
+<td>86</td>
+<td>Runners.TestRunner@4bb33f74</td></tr>
+<tr>
+<td title='Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal()'><b>verifyUserCanAddAndRemoveGoal</b><br>Test class: Tests.AddRemoveGoalTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (814, 940)
+  (Session info: MicrosoftEdge=151.0.4129.101)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ad8109e9e13ee30cd06e5cad64ba4f05, clickElement {id=f.C7C3F439A8C7EE1CE1225F465E20EAAB.d.BC5FECBA130D0DCF8571D9FEF0EBE365.e.194}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 19488, ms:edgeOptions: {debuggerAddress: localhost:52726}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52726/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (ad8109e9e13ee30cd06e5cad64ba4f05)] -&gt; xpath: //*[@id=&quot;MIBRP&quot;]/div/div[2]/div]
+Session ID: ad8109e9e13ee30cd06e5cad64ba4f05
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal(AddRemoveGoalTest.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace414264825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace414264825'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (814, 940)
+  (Session info: MicrosoftEdge=151.0.4129.101)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ad8109e9e13ee30cd06e5cad64ba4f05, clickElement {id=f.C7C3F439A8C7EE1CE1225F465E20EAAB.d.BC5FECBA130D0DCF8571D9FEF0EBE365.e.194}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 19488, ms:edgeOptions: {debuggerAddress: localhost:52726}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52726/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (ad8109e9e13ee30cd06e5cad64ba4f05)] -&gt; xpath: //*[@id=&quot;MIBRP&quot;]/div/div[2]/div]
+Session ID: ad8109e9e13ee30cd06e5cad64ba4f05
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal(AddRemoveGoalTest.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>63</td>
+<td>Tests.AddRemoveGoalTest@4d5b6aac</td></tr>
+<tr>
+<td title='Tests.GoalPersistenceTest.verifyGoalIsRetainedAfterLogoutAndRelogin()'><b>verifyGoalIsRetainedAfterLogoutAndRelogin</b><br>Test class: Tests.GoalPersistenceTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: DrawerPaper (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 17280, ms:edgeOptions: {debuggerAddress: localhost:61552}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61552/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3aebfd34362bdc28cb9573c4418028dd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Tests.GoalPersistenceTest.verifyGoalIsRetainedAfterLogoutAndRelogin(GoalPersistenceTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace478113430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace478113430'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: DrawerPaper (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 17280, ms:edgeOptions: {debuggerAddress: localhost:61552}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61552/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3aebfd34362bdc28cb9573c4418028dd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Tests.GoalPersistenceTest.verifyGoalIsRetainedAfterLogoutAndRelogin(GoalPersistenceTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>70</td>
+<td>Tests.GoalPersistenceTest@3059cbc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.CourseNavigationTest.verifyIITJEEToNEETAndBackToExplore()'><b>verifyIITJEEToNEETAndBackToExplore</b><br>Test class: Tests.CourseNavigationTest</td>
+<td></td>
+<td>15</td>
+<td>Tests.CourseNavigationTest@ea6147e</td></tr>
+<tr>
+<td title='Tests.TS036_MissionImpactTest.TS036_verifyMissionAndImpact()'><b>TS036_verifyMissionAndImpact</b><br>Test class: Tests.TS036_MissionImpactTest<br/>
+<a href="#Output-1515979807" onClick='toggleBox("Output-1515979807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1515979807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1515979807">
+Starting TS036 - Verify Mission & Impact section<br/>
+About Us page opened<br/>
+Mission & Impact heading verified<br/>
+Mission description verified<br/>
+Active Learners verified<br/>
+Top Educators verified<br/>
+TS036 Passed - Mission & Impact section verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Tests.TS036_MissionImpactTest@10d307f1</td></tr>
+<tr>
+<td title='Tests.TopEducatorsCardTest.verifyTopEducatorsCard()'><b>verifyTopEducatorsCard</b><br>Test class: Tests.TopEducatorsCardTest</td>
+<td></td>
+<td>10</td>
+<td>Tests.TopEducatorsCardTest@759d26fb</td></tr>
+<tr>
+<td title='Tests.TS041_ContactInformationTest.TS041_verifyContactInformation()'><b>TS041_verifyContactInformation</b><br>Test class: Tests.TS041_ContactInformationTest<br/>
+<a href="#Output-1465263219" onClick='toggleBox("Output-1465263219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465263219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465263219">
+Starting TS041 - Verify Contact Information on About Us page<br/>
+Unacademy About Us page opened<br/>
+Public relations section verified successfully<br/>
+Press email verified successfully<br/>
+Contact us section verified successfully<br/>
+Help email verified successfully<br/>
+TS041 Passed - Contact information verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Tests.TS041_ContactInformationTest@67080771</td></tr>
+<tr>
+<td title='Tests.DirectDeepLinkTest.verifyScholarshipTestDeepLinkForGuestUser()'><b>verifyScholarshipTestDeepLinkForGuestUser</b><br>Test class: Tests.DirectDeepLinkTest</td>
+<td></td>
+<td>5</td>
+<td>Tests.DirectDeepLinkTest@10feca44</td></tr>
+<tr>
+<td title='Tests.TS038_JoinUsTest.TS038_verifyComeJoinUsAndCareersNavigation()'><b>TS038_verifyComeJoinUsAndCareersNavigation</b><br>Test class: Tests.TS038_JoinUsTest<br/>
+<a href="#Output-1115462163" onClick='toggleBox("Output-1115462163", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1115462163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1115462163">
+Starting TS038 - Verify Come Join Us and Careers navigation<br/>
+About Us page opened<br/>
+COME JOIN US section verified successfully<br/>
+Clicked See open positions<br/>
+Careers page opened successfully<br/>
+TS038 Passed - Careers page and View all job openings verified<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Tests.TS038_JoinUsTest@6f46426d</td></tr>
+<tr>
+<td title='Tests.DoubtsAndSolutionsCardTest.verifyDoubtsAndSolutionsCard()'><b>verifyDoubtsAndSolutionsCard</b><br>Test class: Tests.DoubtsAndSolutionsCardTest</td>
+<td></td>
+<td>10</td>
+<td>Tests.DoubtsAndSolutionsCardTest@49c7b90e</td></tr>
+<tr>
+<td title='Tests.PlaylistCardTest.verifyPlaylistCard()'><b>verifyPlaylistCard</b><br>Test class: Tests.PlaylistCardTest</td>
+<td></td>
+<td>6</td>
+<td>Tests.PlaylistCardTest@6babf3bf</td></tr>
+<tr>
+<td title='Tests.BatchesCardTest.verifyBatchesCard()'><b>verifyBatchesCard</b><br>Test class: Tests.BatchesCardTest</td>
+<td></td>
+<td>8</td>
+<td>Tests.BatchesCardTest@3c73951</td></tr>
+<tr>
+<td title='Tests.TestSeriesCardTest.verifyTestSeriesCard()'><b>verifyTestSeriesCard</b><br>Test class: Tests.TestSeriesCardTest</td>
+<td></td>
+<td>5</td>
+<td>Tests.TestSeriesCardTest@7ea9e1e2</td></tr>
+<tr>
+<td title='Tests.TS033_AboutUsPageTest.TS033_verifyAboutUsPageLoads()'><b>TS033_verifyAboutUsPageLoads</b><br>Test class: Tests.TS033_AboutUsPageTest<br/>
+<a href="#Output-2110776405" onClick='toggleBox("Output-2110776405", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2110776405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110776405">
+Starting TS033 - Verify About Us page loads<br/>
+About Us page opened<br/>
+TS033 Passed - About Us page loaded successfully<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Tests.TS033_AboutUsPageTest@4a7f959b</td></tr>
+<tr>
+<td title='Tests.TS039_JobOpeningsTest.TS039_verifyJobOpeningsNavigation()'><b>TS039_verifyJobOpeningsNavigation</b><br>Test class: Tests.TS039_JobOpeningsTest<br/>
+<a href="#Output-1143894549" onClick='toggleBox("Output-1143894549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1143894549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1143894549">
+Starting TS039 - Verify Job Openings navigation<br/>
+Darwinbox Careers Home opened<br/>
+Open Jobs button verified successfully<br/>
+Clicked We Have Open Jobs<br/>
+All Jobs page opened successfully<br/>
+Job search bar verified successfully<br/>
+Searched for job: Business Development Executive<br/>
+Job is available: Business Development Executive<br/>
+View and Apply button verified successfully<br/>
+TS039 Passed - Job openings navigation, search and availability verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Tests.TS039_JobOpeningsTest@73700b80</td></tr>
+<tr>
+<td title='Tests.CoursesCardTest.verifyCoursesCard()'><b>verifyCoursesCard</b><br>Test class: Tests.CoursesCardTest</td>
+<td></td>
+<td>12</td>
+<td>Tests.CoursesCardTest@24fcf36f</td></tr>
+<tr>
+<td title='Tests.TS037_AchievementsTest.TS037_verifyCompanyAchievements()'><b>TS037_verifyCompanyAchievements</b><br>Test class: Tests.TS037_AchievementsTest<br/>
+<a href="#Output-800288141" onClick='toggleBox("Output-800288141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-800288141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800288141">
+Starting TS037 - Verify Company Achievements / Journey<br/>
+About Us page opened<br/>
+2015 milestone verified<br/>
+2015 milestone description verified<br/>
+2017 milestone verified<br/>
+2018 milestone verified<br/>
+2020 milestone verified<br/>
+TS037 Passed - Company achievements / journey verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Tests.TS037_AchievementsTest@3e84448c</td></tr>
 </table><p>
 </body>
 </html>

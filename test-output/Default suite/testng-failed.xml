@@ -3,6 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="Tests.LoggedInGoalChangeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoggedInUserCanChangeGoal"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LoggedInGoalChangeTest -->
+      <class name="Runners.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="finishReport"/>
+        </methods>
+      </class> <!-- Runners.TestRunner -->
+      <class name="Tests.GoalPersistenceTest">
+        <methods>
+          <include name="verifyGoalIsRetainedAfterLogoutAndRelogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GoalPersistenceTest -->
       <class name="Tests.AddRemoveGoalTest">
         <methods>
           <include name="verifyUserCanAddAndRemoveGoal"/>
@@ -10,6 +32,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- Tests.AddRemoveGoalTest -->
+      <class name="Tests.PracticeCardTest">
+        <methods>
+          <include name="verifyPracticeCard"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.PracticeCardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

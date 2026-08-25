@@ -11,112 +11,78 @@ import Utilities.TestResultManager;
 
 public class CumulativeReportGenerator {
 
-    public static void generateReport() {
+	public static void generateReport() {
 
-        String reportPath =
-                System.getProperty("user.dir")
-                + File.separator
-                + "Reports"
-                + File.separator
-                + "ExtentTestReports.html";
+		String reportPath = System.getProperty("user.dir") + File.separator + "Reports" + File.separator
+				+ "ExtentTestReports.html";
 
-        ExtentSparkReporter reporter =
-                new ExtentSparkReporter(reportPath);
+		/*
+		 * Create a completely fresh report.
+		 */
+		ExtentReports extent = new ExtentReports();
+		ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
+		reporter.config().setReportName("Unacademy Automation Test Report");
+		reporter.config().setDocumentTitle("Unacademy Test Execution Report");
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("Tester", "Unacademy Testing Team");
+		extent.setSystemInfo("Application", "Unacademy");
+		extent.setSystemInfo("Framework", "Selenium + Cucumber + TestNG");
+		extent.setSystemInfo("Environment", "QA");
 
-        reporter.config().setReportName(
-                "Unacademy Automation Test Report"
-        );
+		/*
+		 * Read the latest result of every test from test-results.json.
+		 */
+		Map<String, Map<String, String>> results = TestResultManager.getAllResults();
 
-        reporter.config().setDocumentTitle(
-                "Unacademy Test Execution Report"
-        );
+		for (Map.Entry<String, Map<String, String>> entry : results.entrySet()) {
+			String testName = entry.getKey();
+			Map<String, String> testData = entry.getValue();
+			String status = testData.get("status");
+			String screenshot = testData.get("screenshot");
+			String lastRun = testData.get("lastRun");
 
-        ExtentReports extent = new ExtentReports();
+			/*
+			 * Create exactly ONE Extent entry for each test name.
+			 */
+			ExtentTest test = extent.createTest(testName);
 
-        extent.attachReporter(reporter);
+			/*
+			 * Latest status
+			 */
+			if ("PASS".equalsIgnoreCase(status)) {
+				test.pass("Latest result: PASS");
+			} else if ("FAIL".equalsIgnoreCase(status)) {
+				test.fail("Latest result: FAIL");
+			} else {
+				test.skip("Latest result: SKIP");
+			}
 
-        extent.setSystemInfo("Tester", "Thanuja");
-        extent.setSystemInfo("Application", "Unacademy");
-        extent.setSystemInfo(
-                "Framework",
-                "Selenium + Cucumber + TestNG"
-        );
-        extent.setSystemInfo("Environment", "QA");
+			/*
+			 * Latest screenshot
+			 */
+			if (screenshot != null && !screenshot.trim().isEmpty()) {
+				try{
+					String fileName = new File(screenshot).getName();
+					String relativePath = ".." + File.separator + "Screenshots" + File.separator + fileName;
+					test.addScreenCaptureFromPath(relativePath, "Latest Screenshot");
+				} catch (Exception e) {
+					test.info("Screenshot could not be attached: " + e.getMessage());
+				}
+			}
 
-        Map<String, Map<String, String>> results =
-                TestResultManager.getAllResults();
+			/*
+			 * Last execution time
+			 */
+			if (lastRun != null) {
+				test.info("Last Run: " + lastRun);
+			}
+		}
 
-        for (Map.Entry<String, Map<String, String>> entry
-                : results.entrySet()) {
+		/*
+		 * Write the final report.
+		 */
+		extent.flush();
 
-            String testName = entry.getKey();
-
-            Map<String, String> testData =
-                    entry.getValue();
-
-            String status =
-                    testData.get("status");
-
-            String screenshot =
-                    testData.get("screenshot");
-
-            ExtentTest test =
-                    extent.createTest(testName);
-
-            if ("PASS".equalsIgnoreCase(status)) {
-
-                test.pass("Latest result: PASS");
-
-            } else if ("FAIL".equalsIgnoreCase(status)) {
-
-                test.fail("Latest result: FAIL");
-
-            } else {
-
-                test.skip("Latest result: SKIP");
-            }
-
-            if (screenshot != null) {
-
-                try {
-
-                    String screenshotFile =
-                            new File(screenshot).getName();
-
-                    String relativePath =
-                            ".."
-                            + File.separator
-                            + "Screenshots"
-                            + File.separator
-                            + screenshotFile;
-
-                    test.addScreenCaptureFromPath(
-                            relativePath,
-                            "Latest Screenshot"
-                    );
-
-                } catch (Exception e) {
-
-                    test.info(
-                            "Screenshot could not be attached: "
-                            + e.getMessage()
-                    );
-                }
-            }
-
-            String lastRun =
-                    testData.get("lastRun");
-
-            if (lastRun != null) {
-
-                test.info("Last Run: " + lastRun);
-            }
-        }
-
-        extent.flush();
-
-        System.out.println(
-                "Cumulative Extent Report generated successfully."
-        );
-    }
+		System.out.println("Cumulative Extent Report generated successfully.");
+	}
 }

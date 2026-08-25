@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Base.BaseTest;
+import Utilities.ConfigReader;
 
 public class AddRemoveGoalTest extends BaseTest {
 
@@ -61,7 +62,7 @@ public class AddRemoveGoalTest extends BaseTest {
             ExpectedConditions.visibilityOfElementLocated(mobileInput)
         );
 
-        mobile.sendKeys("9493527869");
+        mobile.sendKeys(ConfigReader.getProperty("mobile_number"));
 
         // =========================================================
         // STEP 4: Click Get OTP / Login

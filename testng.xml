@@ -5,16 +5,21 @@
 	<listeners>
 		<listener class-name="Listeners.ExtentTestNGListener" />
 	</listeners>
-
-	<test name="Unacademy TestNG Tests">
+	<test name="Unacademy Login and Signup Tests">
 
 		<classes>
 
-			
-			
-			<class name="Tests.BatchesCardTest"/>
-			<!--<class name="Tests.TS033_AboutUsPageTest" />
-				<class name="Tests.TS036_MissionImpactTest" />
+			<class name="Runners.TestRunner" />
+
+		</classes>
+
+	</test>
+	<test name="Unacademy About us tests">
+
+		<classes>
+
+			<class name="Tests.TS033_AboutUsPageTest" />
+			<class name="Tests.TS036_MissionImpactTest" />
 			<class name="Tests.TS037_AchievementsTest" />
 			<class name="Tests.TS038_JoinUsTest" />
 			<class name="Tests.TS039_JobOpeningsTest" />
@@ -24,14 +29,26 @@
 
 	</test>
 
-	<test name="Unacademy Cucumber Tests">
+	<test name="Unacademy Goal tests">
 
 		<classes>
 
-			<class name="Runners.TestRunner" />-->
+			<class name="Tests.AddRemoveGoalTest" />
+			<class name="Tests.BatchesCardTest"/>
+			<class name="Tests.CourseNavigationTest" />
+			<class name="Tests.CoursesCardTest" />
+			<class name="Tests.DirectDeepLinkTest" />
+			<class name="Tests.DoubtsAndSolutionsCardTest" />
+			<class name="Tests.GoalPersistenceTest" />
+			<class name="Tests.LoggedInGoalChangeTest" />
+			<class name="Tests.PlaylistCardTest" />
+			<class name="Tests.PracticeCardTest" />
+			<class name="Tests.TestSeriesCardTest" />
+			<class name="Tests.TopEducatorsCardTest" />
 
 		</classes>
 
 	</test>
+
 
 </suite>

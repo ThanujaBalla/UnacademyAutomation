@@ -9,8 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import Reports.CumulativeReportGenerator;
 import Reports.ExtentManager;
 
-public class ExtentTestNGListener
-        implements ITestListener {
+public class ExtentTestNGListener implements ITestListener {
 
     private static ThreadLocal<ExtentTest> test =
             new ThreadLocal<>();
@@ -18,17 +17,20 @@ public class ExtentTestNGListener
     @Override
     public void onTestStart(ITestResult result) {
 
-        String testName =
-                result.getTestClass()
-                      .getRealClass()
-                      .getSimpleName();
+        Class<?> testClass =
+                result.getTestClass().getRealClass();
 
         /*
-         * Create a new Extent entry for the
-         * currently executing test.
-         *
-         * This will be the latest execution.
+         * Do not create Extent entries for Cucumber
+         * TestRunner classes.
          */
+        if (testClass.getPackageName().equals("Runners")) {
+            return;
+        }
+
+        String testName =
+                testClass.getSimpleName();
+
         ExtentTest extentTest =
                 ExtentManager.getExtentReports()
                         .createTest(testName);
@@ -41,39 +43,72 @@ public class ExtentTestNGListener
     }
 
     @Override
-    public void onTestSuccess(
-            ITestResult result) {
+    public void onTestSuccess(ITestResult result) {
 
-        test.get().pass(
-                "Test passed successfully."
-        );
+        Class<?> testClass =
+                result.getTestClass().getRealClass();
+
+        if (testClass.getPackageName().equals("Runners")) {
+            return;
+        }
+
+        if (test.get() != null) {
+            test.get().pass(
+                    "Test passed successfully."
+            );
+        }
     }
 
     @Override
-    public void onTestFailure(
-            ITestResult result) {
+    public void onTestFailure(ITestResult result) {
 
-        test.get().fail(
-                result.getThrowable()
-        );
+        Class<?> testClass =
+                result.getTestClass().getRealClass();
+
+        if (testClass.getPackageName().equals("Runners")) {
+            return;
+        }
+
+        if (test.get() != null) {
+            test.get().fail(
+                    result.getThrowable()
+            );
+        }
     }
 
     @Override
-    public void onTestSkipped(
-            ITestResult result) {
+    public void onTestSkipped(ITestResult result) {
 
-        test.get().skip(
-                "Test skipped."
-        );
+        Class<?> testClass =
+                result.getTestClass().getRealClass();
+
+        if (testClass.getPackageName().equals("Runners")) {
+            return;
+        }
+
+        if (test.get() != null) {
+            test.get().skip(
+                    "Test skipped."
+            );
+        }
     }
 
     @Override
     public void onFinish(ITestContext context) {
+
+        /*
+         * First close the current Extent report.
+         */
+        ExtentManager.flushReport();
+
+        /*
+         * Then generate the final report from
+         * test-results.json.
+         */
         CumulativeReportGenerator.generateReport();
     }
 
     public static ExtentTest getTest() {
-
         return test.get();
     }
 }

@@ -16,10 +16,9 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+import Utilities.TestResultManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-
 
 public class Hooks {
 	private static ExtentReports extent = ExtentManager.getExtentReports();
@@ -30,21 +29,21 @@ public class Hooks {
 		String browser = ConfigReader.getProperty("browser");
 		WebDriver driver;
 		if (scenario.getSourceTagNames().contains("@chrome")) {
-            browser = "chrome";
-        } else if (scenario.getSourceTagNames().contains("@firefox")) {
-            browser = "firefox";
-        } else if (scenario.getSourceTagNames().contains("@edge")) {
-            browser = "edge";
-        }
+			browser = "chrome";
+		} else if (scenario.getSourceTagNames().contains("@firefox")) {
+			browser = "firefox";
+		} else if (scenario.getSourceTagNames().contains("@edge")) {
+			browser = "edge";
+		}
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println("Launching Chrome...");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println("Firefox is not installed.");
-            System.out.println("Using Chrome as fallback for local execution.");
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+			System.out.println("Using Chrome as fallback for local execution.");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			System.out.println("Launching Edge...");
 			WebDriverManager.edgedriver().setup();
@@ -55,7 +54,7 @@ public class Hooks {
 		driver.manage().window().maximize();
 		DriverManager.setDriver(driver);
 		driver.get(ConfigReader.getProperty("url"));
-		
+
 		test = extent.createTest(scenario.getName());
 		test.info("Browser: " + browser);
 		test.info("Scenario started");
@@ -67,25 +66,40 @@ public class Hooks {
 
 	@After
 	public void tearDown(Scenario scenario) {
+
 		WebDriver driver = DriverManager.getDriver();
+		String screenshotPath = null;
+
 		try {
-			/*
-			 * Capture screenshot for EVERY scenario.
-			 */
-			String screenshotPath = ScreenShotUtility.captureScreenshot(driver, scenario.getName());
+			// Capture screenshot
+			screenshotPath = ScreenShotUtility.captureScreenshot(driver, scenario.getName());
 			test.addScreenCaptureFromPath(screenshotPath);
-			/*
-			 * Mark scenario PASS/FAIL
-			 */
+
+			// Mark Extent PASS/FAIL
 			if (scenario.isFailed()) {
 				test.fail("Scenario FAILED");
 				test.fail("Cucumber Status: " + scenario.getStatus());
 			} else {
 				test.pass("Scenario PASSED");
 			}
+
 		} catch (IOException e) {
 			test.warning("Screenshot could not be captured: " + e.getMessage());
 		}
+
+		// ==============================
+		// STORE RESULT IN JSON
+		// ==============================
+
+		String status;
+		if (scenario.isFailed()) {
+			status = "FAIL";
+		} else {
+			status = "PASS";
+		}
+
+		TestResultManager.updateResult(scenario.getName(), status, screenshotPath);
+		System.out.println("Cucumber result stored: " + scenario.getName() + " → " + status);
 		DriverManager.quitDriver();
 	}
 }
