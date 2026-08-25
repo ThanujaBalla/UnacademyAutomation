@@ -126,7 +126,7 @@ public class LoginPage {
 	}
 
 	public String getMobileNumberValue() {
-		return mobileNumber.getAttribute("value");
+		return mobileNumber.getDomAttribute("value");
 	}
 
 	public String get_invalid_otp_error_messsage(String expectedMessage) {

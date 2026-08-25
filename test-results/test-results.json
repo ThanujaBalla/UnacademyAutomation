@@ -6,12 +6,12 @@
   },
   "TC013A - Verify login with invalid mobile" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-25T17:06:54.165708200",
+    "lastRun" : "2026-08-25T17:43:54.664625",
     "screenshot" : "Screenshots\\TC013A_-_Verify_login_with_invalid_mobile.png"
   },
   "TS033_AboutUsPageTest" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-25T17:07:01.945302100",
+    "lastRun" : "2026-08-25T17:45:33.114867700",
     "screenshot" : "Screenshots\\TS033_AboutUsPageTest.png"
   },
   "AddRemoveGoalTest" : {
@@ -21,10 +21,25 @@
   },
   "GoalSmokeTest" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-25T17:10:08.411194800"
+    "lastRun" : "2026-08-25T17:46:04.155926400"
   },
   "PaymentMatrixTest" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-25T17:10:41.753870100"
+    "lastRun" : "2026-08-25T17:46:42.620239700"
+  },
+  "TC020_SearchValidCourse" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-25T17:57:55.528009400",
+    "screenshot" : "Screenshots\\TC020_SearchValidCourse.png"
+  },
+  "BatchesCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-25T17:45:43.687572400",
+    "screenshot" : "Screenshots\\BatchesCardTest.png"
+  },
+  "TC021_SearchValidInstructor" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-25T18:10:14.044062100",
+    "screenshot" : "Screenshots\\TC021_SearchValidInstructor.png"
   }
 }

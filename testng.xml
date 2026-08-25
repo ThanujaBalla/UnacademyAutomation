@@ -6,6 +6,7 @@
 	<listeners>
 		<listener class-name="Listeners.ExtentTestNGListener" />
 	</listeners>
+	
 	<!-- Login and Signup Tests -->
 	<test name="Unacademy Login and Signup Tests">
 		<classes>
@@ -13,6 +14,21 @@
 		</classes>
 	</test>
 
+	<test name="Unacademy Search tests">
+		<classes>
+			<class name="Tests.TC020_SearchValidCourse" />
+			<!--<class name="Tests.TC021_SearchValidInstructor" />
+			<class name="Tests.TC023_SearchInvalidKeyword" />
+			<class name="Tests.TC024_EmptySearch" />
+			<class name="Tests.TC025_SearchPartialKeyword" />
+			<class name="Tests.TC026_TrendingEducators" />
+			<class name="Tests.TC027_RedirectToEducatorProfile" />
+			<class name="Tests.TC028_SearchSpecialCharacters" />
+			<class name="Tests.TC030_SearchResultLoadTime" />
+			<class name="Tests.TC031_ClearSearchNewSearch" /> -->
+		</classes>
+	</test>
+	
 	<!-- About Us Informational Tests -->
 	<test name="Unacademy About Us Tests">
 		<classes>
@@ -28,8 +44,9 @@
 	<!-- Core Goal Tests -->
 	<test name="Unacademy Goal Tests">
 		<classes>
-			 <class name="Tests.AddRemoveGoalTest" />
-           <!--<class name="Tests.BatchesCardTest" />
+			<class name="Tests.BatchesCardTest" />
+			<!--<class name="Tests.AddRemoveGoalTest" />
+				<class name="Tests.BatchesCardTest" />
             <class name="Tests.CourseNavigationTest" />
             <class name="Tests.CoursesCardTest" />
             <class name="Tests.DirectDeepLinkTest" />
@@ -47,16 +64,16 @@
 	<test name="Public Smoke Tests">
 		<classes>
 			<class name="Tests.GoalSmokeTest" />
-            <!--<class name="Tests.EducatorsTest" />
+			<!--<class name="Tests.EducatorsTest" />
             <class name="Tests.SubscriptionPlanTest" />-->
 		</classes>
 	</test>
 
 	<!-- Subscription & Payment Tests -->
-	 <test name="Payment Matrix - Dummy Stub">
-        <classes>
-            <class name="Tests.PaymentMatrixTest" />
-        </classes>
-    </test>
+	<test name="Payment Matrix - Dummy Stub">
+		<classes>
+			<class name="Tests.PaymentMatrixTest" />
+		</classes>
+	</test>
 
 </suite>
