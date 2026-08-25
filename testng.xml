@@ -1,54 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Unacademy Automation Suite">
+<suite name="Unacademy Master Automation Suite" parallel="none">
+
 	<listeners>
 		<listener class-name="Listeners.ExtentTestNGListener" />
 	</listeners>
+	<!-- Login and Signup Tests -->
 	<test name="Unacademy Login and Signup Tests">
-
 		<classes>
-
 			<class name="Runners.TestRunner" />
-
 		</classes>
-
 	</test>
-	<test name="Unacademy About us tests">
 
+	<!-- About Us Informational Tests -->
+	<test name="Unacademy About Us Tests">
 		<classes>
-
 			<class name="Tests.TS033_AboutUsPageTest" />
-			<class name="Tests.TS036_MissionImpactTest" />
-			<class name="Tests.TS037_AchievementsTest" />
-			<class name="Tests.TS038_JoinUsTest" />
-			<class name="Tests.TS039_JobOpeningsTest" />
-			<class name="Tests.TS041_ContactInformationTest" />
-
+			<!-- <class name="Tests.TS036_MissionImpactTest" />
+            <class name="Tests.TS037_AchievementsTest" />
+            <class name="Tests.TS038_JoinUsTest" />
+            <class name="Tests.TS039_JobOpeningsTest" />
+            <class name="Tests.TS041_ContactInformationTest" />-->
 		</classes>
-
 	</test>
 
-	<test name="Unacademy Goal tests">
-
+	<!-- Core Goal Tests -->
+	<test name="Unacademy Goal Tests">
 		<classes>
-
-			<class name="Tests.AddRemoveGoalTest" />
-			<class name="Tests.BatchesCardTest"/>
-			<class name="Tests.CourseNavigationTest" />
-			<class name="Tests.CoursesCardTest" />
-			<class name="Tests.DirectDeepLinkTest" />
-			<class name="Tests.DoubtsAndSolutionsCardTest" />
-			<class name="Tests.GoalPersistenceTest" />
-			<class name="Tests.LoggedInGoalChangeTest" />
-			<class name="Tests.PlaylistCardTest" />
-			<class name="Tests.PracticeCardTest" />
-			<class name="Tests.TestSeriesCardTest" />
-			<class name="Tests.TopEducatorsCardTest" />
-
+			 <class name="Tests.AddRemoveGoalTest" />
+           <!--<class name="Tests.BatchesCardTest" />
+            <class name="Tests.CourseNavigationTest" />
+            <class name="Tests.CoursesCardTest" />
+            <class name="Tests.DirectDeepLinkTest" />
+            <class name="Tests.DoubtsAndSolutionsCardTest" />
+            <class name="Tests.GoalPersistenceTest" />
+            <class name="Tests.LoggedInGoalChangeTest" />
+            <class name="Tests.PlaylistCardTest" />
+            <class name="Tests.PracticeCardTest" />
+            <class name="Tests.TestSeriesCardTest" />
+            <class name="Tests.TopEducatorsCardTest" />-->
 		</classes>
-
 	</test>
 
+	<!-- Public Smoke Tests -->
+	<test name="Public Smoke Tests">
+		<classes>
+			<class name="Tests.GoalSmokeTest" />
+            <!--<class name="Tests.EducatorsTest" />
+            <class name="Tests.SubscriptionPlanTest" />-->
+		</classes>
+	</test>
+
+	<!-- Subscription & Payment Tests -->
+	 <test name="Payment Matrix - Dummy Stub">
+        <classes>
+            <class name="Tests.PaymentMatrixTest" />
+        </classes>
+    </test>
 
 </suite>

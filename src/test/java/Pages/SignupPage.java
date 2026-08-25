@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.By;
 
 public class SignupPage {
 
@@ -32,8 +33,8 @@ public class SignupPage {
     @FindBy(xpath = "//input[@placeholder='One time password']")
     WebElement otpField;
 
-    @FindBy(xpath = "//h1[contains(normalize-space(),'Crack IIT JEE with Unacademy')]")
-    WebElement homePageHeading;
+    private final By homePageHeading =
+            By.xpath("//h1[contains(normalize-space(),'Crack IIT JEE with Unacademy')]");
     
     @FindBy(xpath="//p[@color='var(--color-i-red)']")
     WebElement invalidOTPerrorMessage;
@@ -81,20 +82,28 @@ public class SignupPage {
     }
     
     public String getMobileNumberValue() {
-        return mobileNumber.getAttribute("value");
+        return mobileNumber.getDomAttribute("value");
     }
     
     public boolean isContinueButtonEnabled() {
         System.out.println("Button enabled: " + continueButton.isEnabled());
-        System.out.println("disabled attribute: " + continueButton.getAttribute("disabled"));
-        System.out.println("aria-disabled: " + continueButton.getAttribute("aria-disabled"));
-        System.out.println("class: " + continueButton.getAttribute("class"));
+        System.out.println("disabled attribute: " + continueButton.getDomAttribute("disabled"));
+        System.out.println("aria-disabled: " + continueButton.getDomAttribute("aria-disabled"));
+        System.out.println("class: " + continueButton.getDomAttribute("class"));
         return continueButton.isEnabled();
     }
     
     public boolean isHomePageDisplayed() {
-        wait.until(ExpectedConditions.visibilityOf(homePageHeading));
-        return homePageHeading.isDisplayed();
+        try {
+            WebElement heading = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(homePageHeading)
+            );
+
+            return heading.isDisplayed();
+
+        } catch (Exception e) {
+            return false;
+        }
     }
     
     public boolean isOTPFieldDisplayed() {

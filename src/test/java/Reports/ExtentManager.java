@@ -1,57 +1,72 @@
 package Reports;
 
-import java.io.File;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import Utilities.ConfigReader;
+import java.io.File;
 
-public class ExtentManager {
+public final class ExtentManager {
 
-	private static ExtentReports extent;
+    private ExtentManager() {
+    }
 
-	public static ExtentReports getExtentReports() {
+    public static ExtentReports createReport() {
 
-		if (extent == null) {
+        String reportPath =
+                System.getProperty("user.dir")
+                + File.separator
+                + "Reports"
+                + File.separator
+                + "ExtentTestReports.html";
 
-			String reportPath = System.getProperty("user.dir") + File.separator + "Reports" + File.separator
-					+ "ExtentTestReports.html";
+        File reportFile = new File(reportPath);
 
-			ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
+        File parent = reportFile.getParentFile();
 
-			reporter.config().setReportName("Unacademy Automation Test Report");
+        if (parent != null && !parent.exists()) {
+            parent.mkdirs();
+        }
 
-			reporter.config().setDocumentTitle("Unacademy Test Execution Report");
+        ExtentSparkReporter reporter =
+                new ExtentSparkReporter(reportPath);
 
-			extent = new ExtentReports();
+        reporter.config().setReportName(
+                "Unacademy Automation Test Report"
+        );
 
-			extent.attachReporter(reporter);
+        reporter.config().setDocumentTitle(
+                "Unacademy Test Execution Report"
+        );
 
-			extent.setSystemInfo("Tester", "Unacademy Testing Team");
+        reporter.config().setTimeStampFormat(
+                "dd-MM-yyyy HH:mm:ss"
+        );
 
-			extent.setSystemInfo("Application", "Unacademy");
+        ExtentReports extent =
+                new ExtentReports();
 
-			extent.setSystemInfo("Framework", "Selenium + Cucumber + TestNG");
+        extent.attachReporter(reporter);
 
-			extent.setSystemInfo("Environment", "QA");
+        extent.setSystemInfo(
+                "Tester",
+                "Unacademy Testing Team"
+        );
 
-			extent.setSystemInfo("Browser", ConfigReader.getProperty("browser"));
-		}
+        extent.setSystemInfo(
+                "Application",
+                "Unacademy"
+        );
 
-		return extent;
-	}
+        extent.setSystemInfo(
+                "Framework",
+                "Selenium + Cucumber + TestNG"
+        );
 
-	public static void flushReport() {
+        extent.setSystemInfo(
+                "Environment",
+                "QA"
+        );
 
-		if (extent != null) {
-
-			extent.flush();
-
-			/*
-			 * Allow a new ExtentReports instance to be created for the cumulative report.
-			 */
-			extent = null;
-		}
-	}
+        return extent;
+    }
 }
