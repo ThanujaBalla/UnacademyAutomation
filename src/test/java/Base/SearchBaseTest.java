@@ -21,7 +21,7 @@ public class SearchBaseTest extends BaseTest {
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		driver.get(ConfigReader.getProperty("url"));
+		driver.get(ConfigReader.getProperty("searchurl"));
 
 		System.out.println();
 		System.out.println("======================================");
