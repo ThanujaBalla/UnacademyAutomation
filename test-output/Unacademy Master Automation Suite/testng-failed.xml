@@ -4,16 +4,45 @@
   <listeners>
     <listener class-name="Listeners.ExtentTestNGListener"/>
   </listeners>
+  <test thread-count="5" name="Unacademy Login and Signup Tests(failed)">
+    <classes>
+      <class name="Runners.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="7 15"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runners.TestRunner -->
+    </classes>
+  </test> <!-- Unacademy Login and Signup Tests(failed) -->
   <test thread-count="5" name="Unacademy Search tests(failed)">
     <classes>
-      <class name="Tests.TC020_SearchValidCourse">
+      <class name="Tests.TC031_ClearSearchNewSearch">
         <methods>
+          <include name="TC031_ClearSearchNewSearch"/>
           <include name="tearDown"/>
-          <include name="searchSetup"/>
           <include name="setUp"/>
-          <include name="TC020_SearchValidCourse"/>
+          <include name="searchSetup"/>
         </methods>
-      </class> <!-- Tests.TC020_SearchValidCourse -->
+      </class> <!-- Tests.TC031_ClearSearchNewSearch -->
     </classes>
   </test> <!-- Unacademy Search tests(failed) -->
+  <test thread-count="5" name="Unacademy Goal Tests(failed)">
+    <classes>
+      <class name="Tests.AddRemoveGoalTest">
+        <methods>
+          <include name="verifyUserCanAddAndRemoveGoal"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.AddRemoveGoalTest -->
+      <class name="Tests.GoalPersistenceTest">
+        <methods>
+          <include name="verifyGoalIsRetainedAfterLogoutAndRelogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GoalPersistenceTest -->
+    </classes>
+  </test> <!-- Unacademy Goal Tests(failed) -->
 </suite> <!-- Failed suite [Unacademy Master Automation Suite] -->

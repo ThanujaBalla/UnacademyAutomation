@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Unacademy Master Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners.ExtentTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Unacademy Login and Signup Tests(failed)">
     <classes>
-      <class name="Tests.TC020_SearchValidCourse">
+      <class name="Runners.TestRunner">
         <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="7 15"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runners.TestRunner -->
+    </classes>
+  </test> <!-- Unacademy Login and Signup Tests(failed) -->
+  <test thread-count="5" name="Unacademy Search tests(failed)">
+    <classes>
+      <class name="Tests.TC031_ClearSearchNewSearch">
+        <methods>
+          <include name="TC031_ClearSearchNewSearch"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="searchSetup"/>
-          <include name="TC020_SearchValidCourse"/>
         </methods>
-      </class> <!-- Tests.TC020_SearchValidCourse -->
+      </class> <!-- Tests.TC031_ClearSearchNewSearch -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Unacademy Search tests(failed) -->
+  <test thread-count="5" name="Unacademy Goal Tests(failed)">
+    <classes>
+      <class name="Tests.AddRemoveGoalTest">
+        <methods>
+          <include name="verifyUserCanAddAndRemoveGoal"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.AddRemoveGoalTest -->
+      <class name="Tests.GoalPersistenceTest">
+        <methods>
+          <include name="verifyGoalIsRetainedAfterLogoutAndRelogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GoalPersistenceTest -->
+    </classes>
+  </test> <!-- Unacademy Goal Tests(failed) -->
+</suite> <!-- Failed suite [Unacademy Master Automation Suite] -->

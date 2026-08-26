@@ -17,7 +17,7 @@
 	<test name="Unacademy Search tests">
 		<classes>
 			<class name="Tests.TC020_SearchValidCourse" />
-			<!--<class name="Tests.TC021_SearchValidInstructor" />
+			<class name="Tests.TC021_SearchValidInstructor" />
 			<class name="Tests.TC023_SearchInvalidKeyword" />
 			<class name="Tests.TC024_EmptySearch" />
 			<class name="Tests.TC025_SearchPartialKeyword" />
@@ -25,7 +25,7 @@
 			<class name="Tests.TC027_RedirectToEducatorProfile" />
 			<class name="Tests.TC028_SearchSpecialCharacters" />
 			<class name="Tests.TC030_SearchResultLoadTime" />
-			<class name="Tests.TC031_ClearSearchNewSearch" /> -->
+			<class name="Tests.TC031_ClearSearchNewSearch" /> 
 		</classes>
 	</test>
 	
@@ -33,11 +33,11 @@
 	<test name="Unacademy About Us Tests">
 		<classes>
 			<class name="Tests.TS033_AboutUsPageTest" />
-			<!-- <class name="Tests.TS036_MissionImpactTest" />
+			 <class name="Tests.TS036_MissionImpactTest" />
             <class name="Tests.TS037_AchievementsTest" />
             <class name="Tests.TS038_JoinUsTest" />
             <class name="Tests.TS039_JobOpeningsTest" />
-            <class name="Tests.TS041_ContactInformationTest" />-->
+            <class name="Tests.TS041_ContactInformationTest" />
 		</classes>
 	</test>
 
@@ -45,7 +45,7 @@
 	<test name="Unacademy Goal Tests">
 		<classes>
 			<class name="Tests.BatchesCardTest" />
-			<!--<class name="Tests.AddRemoveGoalTest" />
+			<class name="Tests.AddRemoveGoalTest" />
 				<class name="Tests.BatchesCardTest" />
             <class name="Tests.CourseNavigationTest" />
             <class name="Tests.CoursesCardTest" />
@@ -56,7 +56,7 @@
             <class name="Tests.PlaylistCardTest" />
             <class name="Tests.PracticeCardTest" />
             <class name="Tests.TestSeriesCardTest" />
-            <class name="Tests.TopEducatorsCardTest" />-->
+            <class name="Tests.TopEducatorsCardTest" />
 		</classes>
 	</test>
 
@@ -64,8 +64,8 @@
 	<test name="Public Smoke Tests">
 		<classes>
 			<class name="Tests.GoalSmokeTest" />
-			<!--<class name="Tests.EducatorsTest" />
-            <class name="Tests.SubscriptionPlanTest" />-->
+			<class name="Tests.EducatorsTest" />
+            <class name="Tests.SubscriptionPlanTest" />
 		</classes>
 	</test>
 

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Unacademy Search tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 25 17:43:55 IST 2026</td>
+<td>Started on:</td><td>Wed Aug 26 10:02:15 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>91 seconds (91094 ms)</td>
+<tr><td>Total time:</td><td>673 seconds (673249 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.TC020_SearchValidCourse.TC020_SearchValidCourse()'><b>TC020_SearchValidCourse</b><br>Test class: Tests.TC020_SearchValidCourse</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: a[href^=&apos;/search/&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+<td title='Tests.TC031_ClearSearchNewSearch.TC031_ClearSearchNewSearch()'><b>TC031_ClearSearchNewSearch</b><br>Test class: Tests.TC031_ClearSearchNewSearch</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 7176, ms:edgeOptions: {debuggerAddress: localhost:63064}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63064/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4234a2e9e9b1315a668480039a44a4c3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Pages.SearchPage.selectSearchSuggestion(SearchPage.java:46)
-	at Tests.TC020_SearchValidCourse.TC020_SearchValidCourse(TC020_SearchValidCourse.java:17)
+Command: [b60c75ed056d817198a2de0668350e0d, sendKeysToElement {id=f.C1CC2F0FF0FAF5A38AA310F77A349A45.d.D76ADECB98ED288661735D1D4C02D0FF.e.129, value=[Ljava.lang.CharSequence;@518ed96e}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 10968, ms:edgeOptions: {debuggerAddress: localhost:52014}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b60c75ed056d817198a2de0668350e0d)] -&gt; css selector: input[placeholder=&apos;Search courses, test series and educators&apos;]]
+Session ID: b60c75ed056d817198a2de0668350e0d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at Pages.SearchPage.enterSearchText(SearchPage.java:39)
+	at Tests.TC031_ClearSearchNewSearch.TC031_ClearSearchNewSearch(TC031_ClearSearchNewSearch.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1282611542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1282611542'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: a[href^=&apos;/search/&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1859755232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1859755232'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 7176, ms:edgeOptions: {debuggerAddress: localhost:63064}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63064/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4234a2e9e9b1315a668480039a44a4c3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Pages.SearchPage.selectSearchSuggestion(SearchPage.java:46)
-	at Tests.TC020_SearchValidCourse.TC020_SearchValidCourse(TC020_SearchValidCourse.java:17)
+Command: [b60c75ed056d817198a2de0668350e0d, sendKeysToElement {id=f.C1CC2F0FF0FAF5A38AA310F77A349A45.d.D76ADECB98ED288661735D1D4C02D0FF.e.129, value=[Ljava.lang.CharSequence;@518ed96e}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 10968, ms:edgeOptions: {debuggerAddress: localhost:52014}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b60c75ed056d817198a2de0668350e0d)] -&gt; css selector: input[placeholder=&apos;Search courses, test series and educators&apos;]]
+Session ID: b60c75ed056d817198a2de0668350e0d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at Pages.SearchPage.enterSearchText(SearchPage.java:39)
+	at Tests.TC031_ClearSearchNewSearch.TC031_ClearSearchNewSearch(TC031_ClearSearchNewSearch.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -126,8 +151,62 @@ Session ID: 4234a2e9e9b1315a668480039a44a4c3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>31</td>
-<td>Tests.TC020_SearchValidCourse@d6e7bab</td></tr>
+<td>8</td>
+<td>Tests.TC031_ClearSearchNewSearch@53976f5c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.TC020_SearchValidCourse.TC020_SearchValidCourse()'><b>TC020_SearchValidCourse</b><br>Test class: Tests.TC020_SearchValidCourse</td>
+<td></td>
+<td>1</td>
+<td>Tests.TC020_SearchValidCourse@1f97cf0d</td></tr>
+<tr>
+<td title='Tests.TC024_EmptySearch.TC024_EmptySearch()'><b>TC024_EmptySearch</b><br>Test class: Tests.TC024_EmptySearch</td>
+<td></td>
+<td>1</td>
+<td>Tests.TC024_EmptySearch@1eb5174b</td></tr>
+<tr>
+<td title='Tests.TC030_SearchResultLoadTime.TC030_SearchResultLoadTime()'><b>TC030_SearchResultLoadTime</b><br>Test class: Tests.TC030_SearchResultLoadTime</td>
+<td></td>
+<td>30</td>
+<td>Tests.TC030_SearchResultLoadTime@4e7912d8</td></tr>
+<tr>
+<td title='Tests.TC026_TrendingEducators.TC026_TrendingEducators()'><b>TC026_TrendingEducators</b><br>Test class: Tests.TC026_TrendingEducators</td>
+<td></td>
+<td>0</td>
+<td>Tests.TC026_TrendingEducators@72cde7cc</td></tr>
+<tr>
+<td title='Tests.TC027_RedirectToEducatorProfile.TC027_RedirectToEducatorProfile()'><b>TC027_RedirectToEducatorProfile</b><br>Test class: Tests.TC027_RedirectToEducatorProfile</td>
+<td></td>
+<td>3</td>
+<td>Tests.TC027_RedirectToEducatorProfile@5fd4f8f5</td></tr>
+<tr>
+<td title='Tests.TC021_SearchValidInstructor.TC021_SearchValidInstructor()'><b>TC021_SearchValidInstructor</b><br>Test class: Tests.TC021_SearchValidInstructor</td>
+<td></td>
+<td>2</td>
+<td>Tests.TC021_SearchValidInstructor@c333c60</td></tr>
+<tr>
+<td title='Tests.TC028_SearchSpecialCharacters.TC028_SearchSpecialCharacters()'><b>TC028_SearchSpecialCharacters</b><br>Test class: Tests.TC028_SearchSpecialCharacters</td>
+<td></td>
+<td>7</td>
+<td>Tests.TC028_SearchSpecialCharacters@696da30b</td></tr>
+<tr>
+<td title='Tests.TC023_SearchInvalidKeyword.TC023_SearchInvalidKeyword()'><b>TC023_SearchInvalidKeyword</b><br>Test class: Tests.TC023_SearchInvalidKeyword</td>
+<td></td>
+<td>7</td>
+<td>Tests.TC023_SearchInvalidKeyword@79da8dc5</td></tr>
+<tr>
+<td title='Tests.TC025_SearchPartialKeyword.TC025_SearchPartialKeyword()'><b>TC025_SearchPartialKeyword</b><br>Test class: Tests.TC025_SearchPartialKeyword</td>
+<td></td>
+<td>5</td>
+<td>Tests.TC025_SearchPartialKeyword@67080771</td></tr>
 </table><p>
 </body>
 </html>

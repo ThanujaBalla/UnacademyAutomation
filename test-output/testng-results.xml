@@ -1,29 +1,759 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="54" passed="49" failed="5" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Starting TS033 - Verify About Us page loads]]>
+    </line>
+    <line>
+      <![CDATA[About Us page opened]]>
+    </line>
+    <line>
+      <![CDATA[TS033 Passed - About Us page loaded successfully]]>
+    </line>
+    <line>
+      <![CDATA[Starting TS036 - Verify Mission & Impact section]]>
+    </line>
+    <line>
+      <![CDATA[About Us page opened]]>
+    </line>
+    <line>
+      <![CDATA[Mission & Impact heading verified]]>
+    </line>
+    <line>
+      <![CDATA[Mission description verified]]>
+    </line>
+    <line>
+      <![CDATA[Active Learners verified]]>
+    </line>
+    <line>
+      <![CDATA[Top Educators verified]]>
+    </line>
+    <line>
+      <![CDATA[TS036 Passed - Mission & Impact section verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Starting TS037 - Verify Company Achievements / Journey]]>
+    </line>
+    <line>
+      <![CDATA[About Us page opened]]>
+    </line>
+    <line>
+      <![CDATA[2015 milestone verified]]>
+    </line>
+    <line>
+      <![CDATA[2015 milestone description verified]]>
+    </line>
+    <line>
+      <![CDATA[2017 milestone verified]]>
+    </line>
+    <line>
+      <![CDATA[2018 milestone verified]]>
+    </line>
+    <line>
+      <![CDATA[2020 milestone verified]]>
+    </line>
+    <line>
+      <![CDATA[TS037 Passed - Company achievements / journey verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Starting TS038 - Verify Come Join Us and Careers navigation]]>
+    </line>
+    <line>
+      <![CDATA[About Us page opened]]>
+    </line>
+    <line>
+      <![CDATA[COME JOIN US section verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked See open positions]]>
+    </line>
+    <line>
+      <![CDATA[Careers page opened successfully]]>
+    </line>
+    <line>
+      <![CDATA[TS038 Passed - Careers page and View all job openings verified]]>
+    </line>
+    <line>
+      <![CDATA[Starting TS039 - Verify Job Openings navigation]]>
+    </line>
+    <line>
+      <![CDATA[Darwinbox Careers Home opened]]>
+    </line>
+    <line>
+      <![CDATA[Open Jobs button verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked We Have Open Jobs]]>
+    </line>
+    <line>
+      <![CDATA[All Jobs page opened successfully]]>
+    </line>
+    <line>
+      <![CDATA[Job search bar verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Searched for job: Business Development Executive]]>
+    </line>
+    <line>
+      <![CDATA[Job is available: Business Development Executive]]>
+    </line>
+    <line>
+      <![CDATA[View and Apply button verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[TS039 Passed - Job openings navigation, search and availability verified]]>
+    </line>
+    <line>
+      <![CDATA[Starting TS041 - Verify Contact Information on About Us page]]>
+    </line>
+    <line>
+      <![CDATA[Unacademy About Us page opened]]>
+    </line>
+    <line>
+      <![CDATA[Public relations section verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Press email verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Contact us section verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Help email verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[TS041 Passed - Contact information verified successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-08-25T18:08:53 IST" name="Default suite" finished-at="2026-08-25T18:10:15 IST" duration-ms="82759">
+  <suite started-at="2026-08-26T09:52:04 IST" name="Unacademy Master Automation Suite" finished-at="2026-08-26T10:22:20 IST" duration-ms="1816749">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-08-25T18:08:53 IST" name="Default test" finished-at="2026-08-25T18:10:15 IST" duration-ms="82759">
-      <class name="Tests.TC021_SearchValidInstructor">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC021_SearchValidInstructor@38afe297]" started-at="2026-08-25T18:08:53 IST" name="setUp" finished-at="2026-08-25T18:08:57 IST" duration-ms="4367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC021_SearchValidInstructor@38afe297]" started-at="2026-08-25T18:08:57 IST" name="searchSetup" finished-at="2026-08-25T18:10:11 IST" duration-ms="74320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSetup -->
-        <test-method signature="TC021_SearchValidInstructor()[pri:0, instance:Tests.TC021_SearchValidInstructor@38afe297]" started-at="2026-08-25T18:10:11 IST" name="TC021_SearchValidInstructor" finished-at="2026-08-25T18:10:13 IST" duration-ms="1356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC021_SearchValidInstructor -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC021_SearchValidInstructor@38afe297]" started-at="2026-08-25T18:10:13 IST" name="tearDown" finished-at="2026-08-25T18:10:15 IST" duration-ms="2671" status="PASS">
+    <test started-at="2026-08-26T09:52:04 IST" name="Unacademy Login and Signup Tests" finished-at="2026-08-26T10:02:15 IST" duration-ms="611438">
+      <class name="Runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:52:04 IST" name="setUpClass" finished-at="2026-08-26T09:52:05 IST" duration-ms="1242" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC021_SearchValidInstructor status=SUCCESS method=TC021_SearchValidInstructor.TC021_SearchValidInstructor()[pri:0, instance:Tests.TC021_SearchValidInstructor@38afe297] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@6cf87ba6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:52:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:52:58 IST" duration-ms="53434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC011 - Login with valid mobile number and valid OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:52:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:53:24 IST" duration-ms="25652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC012 - Login with valid email id and otp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:53:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:53:35 IST" duration-ms="10735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC013A - Verify login with invalid mobile"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:53:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:53:49 IST" duration-ms="14536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC013B - Verify login with invalid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:53:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:54:03 IST" duration-ms="13538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC014 - Verify login with invalid OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:54:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:55:15 IST" duration-ms="72174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC015 - Verify login with expired OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:55:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:55:46 IST" duration-ms="30728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC017 - Login from Laptop TC018 - verify login from geographical location"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:55:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:57:18 IST" duration-ms="92353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC019 - Verify Successfull logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bced186924dc3ef6da087b740c365b50, clickElement {id=f.19001A2FF03379A7CC6FE2E6E62AF1A2.d.71F18B0DD55AC8EE6FD2CF820A9697B2.e.501}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62848}, goog:processID: 7908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62848/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bced186924dc3ef6da087b740c365b50)] -> xpath: //div[contains(@class,'ProfileAvatarWrapper')]//img]
+Session ID: bced186924dc3ef6da087b740c365b50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bced186924dc3ef6da087b740c365b50, clickElement {id=f.19001A2FF03379A7CC6FE2E6E62AF1A2.d.71F18B0DD55AC8EE6FD2CF820A9697B2.e.501}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62848}, goog:processID: 7908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62848/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bced186924dc3ef6da087b740c365b50)] -> xpath: //div[contains(@class,'ProfileAvatarWrapper')]//img]
+Session ID: bced186924dc3ef6da087b740c365b50
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Pages.LoginPage.clickProfileIcon(LoginPage.java:175)
+at StepDefinitions.logintest.i_click_profile_button(logintest.java:159)
+at ✽.I click on the profile icon(file:///C:/Users/Balla.Thanuja/OneDrive%20-%20Coforge%20Limited/eclipse%20workspace/Selenium/UnacademyAutomation/src/test/java/Features/login.feature:87)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:57:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:57:51 IST" duration-ms="32931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 - Verify joining Unacademy with valid mobile number and valid OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:57:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:58:01 IST" duration-ms="10330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC002 - Verify joining with invalid mobile number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:58:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:58:13 IST" duration-ms="11589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC003 - Verify login with invalid OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:58:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:59:24 IST" duration-ms="71578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC004- Verify joining with expired OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:59:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T09:59:54 IST" duration-ms="29085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC006 &TC007 - Verify sign up from Laptop using Chrome"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T09:59:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T10:00:23 IST" duration-ms="29855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC008 - Verify sign up using Firefox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T10:00:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T10:00:52 IST" duration-ms="29097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC009 - Verify sign up using Edge"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T10:00:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-26T10:02:15 IST" duration-ms="82461" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC010 - Verify first-time joining Unacademy with valid mobile number, OTP, name and state"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unacademy Sign Up"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@placeholder='Name']' (tried for 65 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@placeholder='Name']' (tried for 65 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pages.SignupPage.enterName(SignupPage.java:148)
+at StepDefinitions.signupTest.i_enter_my_name(signupTest.java:128)
+at ✽.I enter my name(file:///C:/Users/Balla.Thanuja/OneDrive%20-%20Coforge%20Limited/eclipse%20workspace/Selenium/UnacademyAutomation/src/test/java/Features/signup.feature:76)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8de4ee47e5bcf81db7023797280565d, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50019}, goog:processID: 20100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50019/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b8de4ee47e5bcf81db7023797280565d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.TestRunner@192c3f1e]" started-at="2026-08-26T10:02:15 IST" name="tearDownClass" finished-at="2026-08-26T10:02:15 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runners.TestRunner -->
+    </test> <!-- Unacademy Login and Signup Tests -->
+    <test started-at="2026-08-26T10:02:15 IST" name="Unacademy Search tests" finished-at="2026-08-26T10:13:28 IST" duration-ms="673249">
+      <class name="Tests.TC031_ClearSearchNewSearch">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC031_ClearSearchNewSearch@53976f5c]" started-at="2026-08-26T10:12:25 IST" name="setUp" finished-at="2026-08-26T10:12:27 IST" duration-ms="1966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC031_ClearSearchNewSearch@53976f5c]" started-at="2026-08-26T10:12:27 IST" name="searchSetup" finished-at="2026-08-26T10:13:18 IST" duration-ms="50630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC031_ClearSearchNewSearch()[pri:0, instance:Tests.TC031_ClearSearchNewSearch@53976f5c]" started-at="2026-08-26T10:13:18 IST" name="TC031_ClearSearchNewSearch" finished-at="2026-08-26T10:13:26 IST" duration-ms="8018" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b60c75ed056d817198a2de0668350e0d, sendKeysToElement {id=f.C1CC2F0FF0FAF5A38AA310F77A349A45.d.D76ADECB98ED288661735D1D4C02D0FF.e.129, value=[Ljava.lang.CharSequence;@518ed96e}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 10968, ms:edgeOptions: {debuggerAddress: localhost:52014}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b60c75ed056d817198a2de0668350e0d)] -> css selector: input[placeholder='Search courses, test series and educators']]
+Session ID: b60c75ed056d817198a2de0668350e0d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=151.0.4129.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b60c75ed056d817198a2de0668350e0d, sendKeysToElement {id=f.C1CC2F0FF0FAF5A38AA310F77A349A45.d.D76ADECB98ED288661735D1D4C02D0FF.e.129, value=[Ljava.lang.CharSequence;@518ed96e}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 10968, ms:edgeOptions: {debuggerAddress: localhost:52014}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b60c75ed056d817198a2de0668350e0d)] -> css selector: input[placeholder='Search courses, test series and educators']]
+Session ID: b60c75ed056d817198a2de0668350e0d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at Pages.SearchPage.enterSearchText(SearchPage.java:39)
+at Tests.TC031_ClearSearchNewSearch.TC031_ClearSearchNewSearch(TC031_ClearSearchNewSearch.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC031_ClearSearchNewSearch -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC031_ClearSearchNewSearch@53976f5c]" started-at="2026-08-26T10:13:26 IST" name="tearDown" finished-at="2026-08-26T10:13:28 IST" duration-ms="2240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC031_ClearSearchNewSearch status=FAILURE method=TC031_ClearSearchNewSearch.TC031_ClearSearchNewSearch()[pri:0, instance:Tests.TC031_ClearSearchNewSearch@53976f5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC031_ClearSearchNewSearch -->
+      <class name="Tests.TC028_SearchSpecialCharacters">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC028_SearchSpecialCharacters@696da30b]" started-at="2026-08-26T10:09:54 IST" name="setUp" finished-at="2026-08-26T10:09:57 IST" duration-ms="2967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC028_SearchSpecialCharacters@696da30b]" started-at="2026-08-26T10:09:57 IST" name="searchSetup" finished-at="2026-08-26T10:10:50 IST" duration-ms="53124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC028_SearchSpecialCharacters()[pri:0, instance:Tests.TC028_SearchSpecialCharacters@696da30b]" started-at="2026-08-26T10:10:50 IST" name="TC028_SearchSpecialCharacters" finished-at="2026-08-26T10:10:57 IST" duration-ms="7363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC028_SearchSpecialCharacters -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC028_SearchSpecialCharacters@696da30b]" started-at="2026-08-26T10:10:57 IST" name="tearDown" finished-at="2026-08-26T10:10:59 IST" duration-ms="1931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC028_SearchSpecialCharacters status=SUCCESS method=TC028_SearchSpecialCharacters.TC028_SearchSpecialCharacters()[pri:0, instance:Tests.TC028_SearchSpecialCharacters@696da30b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC028_SearchSpecialCharacters -->
+      <class name="Tests.TC025_SearchPartialKeyword">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC025_SearchPartialKeyword@67080771]" started-at="2026-08-26T10:06:45 IST" name="setUp" finished-at="2026-08-26T10:06:48 IST" duration-ms="3079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC025_SearchPartialKeyword@67080771]" started-at="2026-08-26T10:06:48 IST" name="searchSetup" finished-at="2026-08-26T10:07:42 IST" duration-ms="54117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC025_SearchPartialKeyword()[pri:0, instance:Tests.TC025_SearchPartialKeyword@67080771]" started-at="2026-08-26T10:07:42 IST" name="TC025_SearchPartialKeyword" finished-at="2026-08-26T10:07:47 IST" duration-ms="5433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC025_SearchPartialKeyword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC025_SearchPartialKeyword@67080771]" started-at="2026-08-26T10:07:47 IST" name="tearDown" finished-at="2026-08-26T10:07:49 IST" duration-ms="1688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC025_SearchPartialKeyword status=SUCCESS method=TC025_SearchPartialKeyword.TC025_SearchPartialKeyword()[pri:0, instance:Tests.TC025_SearchPartialKeyword@67080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC025_SearchPartialKeyword -->
+      <class name="Tests.TC030_SearchResultLoadTime">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC030_SearchResultLoadTime@4e7912d8]" started-at="2026-08-26T10:10:59 IST" name="setUp" finished-at="2026-08-26T10:11:02 IST" duration-ms="2635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC030_SearchResultLoadTime@4e7912d8]" started-at="2026-08-26T10:11:02 IST" name="searchSetup" finished-at="2026-08-26T10:11:53 IST" duration-ms="51490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC030_SearchResultLoadTime()[pri:0, instance:Tests.TC030_SearchResultLoadTime@4e7912d8]" started-at="2026-08-26T10:11:53 IST" name="TC030_SearchResultLoadTime" finished-at="2026-08-26T10:12:24 IST" duration-ms="30697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC030_SearchResultLoadTime -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC030_SearchResultLoadTime@4e7912d8]" started-at="2026-08-26T10:12:24 IST" name="tearDown" finished-at="2026-08-26T10:12:25 IST" duration-ms="1535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC030_SearchResultLoadTime status=SUCCESS method=TC030_SearchResultLoadTime.TC030_SearchResultLoadTime()[pri:0, instance:Tests.TC030_SearchResultLoadTime@4e7912d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC030_SearchResultLoadTime -->
+      <class name="Tests.TC027_RedirectToEducatorProfile">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC027_RedirectToEducatorProfile@5fd4f8f5]" started-at="2026-08-26T10:08:51 IST" name="setUp" finished-at="2026-08-26T10:08:53 IST" duration-ms="2400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC027_RedirectToEducatorProfile@5fd4f8f5]" started-at="2026-08-26T10:08:53 IST" name="searchSetup" finished-at="2026-08-26T10:09:48 IST" duration-ms="54492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC027_RedirectToEducatorProfile()[pri:0, instance:Tests.TC027_RedirectToEducatorProfile@5fd4f8f5]" started-at="2026-08-26T10:09:48 IST" name="TC027_RedirectToEducatorProfile" finished-at="2026-08-26T10:09:51 IST" duration-ms="3343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC027_RedirectToEducatorProfile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC027_RedirectToEducatorProfile@5fd4f8f5]" started-at="2026-08-26T10:09:51 IST" name="tearDown" finished-at="2026-08-26T10:09:54 IST" duration-ms="2391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC027_RedirectToEducatorProfile status=SUCCESS method=TC027_RedirectToEducatorProfile.TC027_RedirectToEducatorProfile()[pri:0, instance:Tests.TC027_RedirectToEducatorProfile@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC027_RedirectToEducatorProfile -->
+      <class name="Tests.TC020_SearchValidCourse">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC020_SearchValidCourse@1f97cf0d]" started-at="2026-08-26T10:02:15 IST" name="setUp" finished-at="2026-08-26T10:02:17 IST" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC020_SearchValidCourse@1f97cf0d]" started-at="2026-08-26T10:02:17 IST" name="searchSetup" finished-at="2026-08-26T10:03:21 IST" duration-ms="63553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC020_SearchValidCourse()[pri:0, instance:Tests.TC020_SearchValidCourse@1f97cf0d]" started-at="2026-08-26T10:03:21 IST" name="TC020_SearchValidCourse" finished-at="2026-08-26T10:03:23 IST" duration-ms="1853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC020_SearchValidCourse -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC020_SearchValidCourse@1f97cf0d]" started-at="2026-08-26T10:03:23 IST" name="tearDown" finished-at="2026-08-26T10:03:25 IST" duration-ms="2458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC020_SearchValidCourse status=SUCCESS method=TC020_SearchValidCourse.TC020_SearchValidCourse()[pri:0, instance:Tests.TC020_SearchValidCourse@1f97cf0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC020_SearchValidCourse -->
+      <class name="Tests.TC024_EmptySearch">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC024_EmptySearch@1eb5174b]" started-at="2026-08-26T10:05:43 IST" name="setUp" finished-at="2026-08-26T10:05:46 IST" duration-ms="3089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC024_EmptySearch@1eb5174b]" started-at="2026-08-26T10:05:46 IST" name="searchSetup" finished-at="2026-08-26T10:06:41 IST" duration-ms="55247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC024_EmptySearch()[pri:0, instance:Tests.TC024_EmptySearch@1eb5174b]" started-at="2026-08-26T10:06:41 IST" name="TC024_EmptySearch" finished-at="2026-08-26T10:06:42 IST" duration-ms="1319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC024_EmptySearch -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC024_EmptySearch@1eb5174b]" started-at="2026-08-26T10:06:42 IST" name="tearDown" finished-at="2026-08-26T10:06:45 IST" duration-ms="2429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC024_EmptySearch status=SUCCESS method=TC024_EmptySearch.TC024_EmptySearch()[pri:0, instance:Tests.TC024_EmptySearch@1eb5174b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC024_EmptySearch -->
+      <class name="Tests.TC021_SearchValidInstructor">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC021_SearchValidInstructor@c333c60]" started-at="2026-08-26T10:03:25 IST" name="setUp" finished-at="2026-08-26T10:03:29 IST" duration-ms="3459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC021_SearchValidInstructor@c333c60]" started-at="2026-08-26T10:03:29 IST" name="searchSetup" finished-at="2026-08-26T10:04:26 IST" duration-ms="57304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC021_SearchValidInstructor()[pri:0, instance:Tests.TC021_SearchValidInstructor@c333c60]" started-at="2026-08-26T10:04:26 IST" name="TC021_SearchValidInstructor" finished-at="2026-08-26T10:04:28 IST" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021_SearchValidInstructor -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC021_SearchValidInstructor@c333c60]" started-at="2026-08-26T10:04:28 IST" name="tearDown" finished-at="2026-08-26T10:04:31 IST" duration-ms="2457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC021_SearchValidInstructor status=SUCCESS method=TC021_SearchValidInstructor.TC021_SearchValidInstructor()[pri:0, instance:Tests.TC021_SearchValidInstructor@c333c60] output={null}]]]>
               </value>
             </param>
           </params>
@@ -31,6 +761,994 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.TC021_SearchValidInstructor -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.TC026_TrendingEducators">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC026_TrendingEducators@72cde7cc]" started-at="2026-08-26T10:07:49 IST" name="setUp" finished-at="2026-08-26T10:07:51 IST" duration-ms="2553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC026_TrendingEducators@72cde7cc]" started-at="2026-08-26T10:07:51 IST" name="searchSetup" finished-at="2026-08-26T10:08:48 IST" duration-ms="56301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC026_TrendingEducators()[pri:0, instance:Tests.TC026_TrendingEducators@72cde7cc]" started-at="2026-08-26T10:08:48 IST" name="TC026_TrendingEducators" finished-at="2026-08-26T10:08:48 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC026_TrendingEducators -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC026_TrendingEducators@72cde7cc]" started-at="2026-08-26T10:08:48 IST" name="tearDown" finished-at="2026-08-26T10:08:51 IST" duration-ms="2585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC026_TrendingEducators status=SUCCESS method=TC026_TrendingEducators.TC026_TrendingEducators()[pri:0, instance:Tests.TC026_TrendingEducators@72cde7cc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC026_TrendingEducators -->
+      <class name="Tests.TC023_SearchInvalidKeyword">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TC023_SearchInvalidKeyword@79da8dc5]" started-at="2026-08-26T10:04:31 IST" name="setUp" finished-at="2026-08-26T10:04:34 IST" duration-ms="2852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="searchSetup()[pri:0, instance:Tests.TC023_SearchInvalidKeyword@79da8dc5]" started-at="2026-08-26T10:04:34 IST" name="searchSetup" finished-at="2026-08-26T10:05:33 IST" duration-ms="59045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method signature="TC023_SearchInvalidKeyword()[pri:0, instance:Tests.TC023_SearchInvalidKeyword@79da8dc5]" started-at="2026-08-26T10:05:33 IST" name="TC023_SearchInvalidKeyword" finished-at="2026-08-26T10:05:40 IST" duration-ms="7792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC023_SearchInvalidKeyword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TC023_SearchInvalidKeyword@79da8dc5]" started-at="2026-08-26T10:05:40 IST" name="tearDown" finished-at="2026-08-26T10:05:43 IST" duration-ms="2035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC023_SearchInvalidKeyword status=SUCCESS method=TC023_SearchInvalidKeyword.TC023_SearchInvalidKeyword()[pri:0, instance:Tests.TC023_SearchInvalidKeyword@79da8dc5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TC023_SearchInvalidKeyword -->
+    </test> <!-- Unacademy Search tests -->
+    <test started-at="2026-08-26T10:13:28 IST" name="Unacademy About Us Tests" finished-at="2026-08-26T10:14:18 IST" duration-ms="49559">
+      <class name="Tests.TS038_JoinUsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS038_JoinUsTest@cad498c]" started-at="2026-08-26T10:13:54 IST" name="setUp" finished-at="2026-08-26T10:13:56 IST" duration-ms="2636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS038_verifyComeJoinUsAndCareersNavigation()[pri:0, instance:Tests.TS038_JoinUsTest@cad498c]" started-at="2026-08-26T10:13:56 IST" name="TS038_verifyComeJoinUsAndCareersNavigation" finished-at="2026-08-26T10:14:01 IST" duration-ms="5012" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS038 - Verify Come Join Us and Careers navigation]]>
+            </line>
+            <line>
+              <![CDATA[About Us page opened]]>
+            </line>
+            <line>
+              <![CDATA[COME JOIN US section verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked See open positions]]>
+            </line>
+            <line>
+              <![CDATA[Careers page opened successfully]]>
+            </line>
+            <line>
+              <![CDATA[TS038 Passed - Careers page and View all job openings verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS038_verifyComeJoinUsAndCareersNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS038_JoinUsTest@cad498c]" started-at="2026-08-26T10:14:01 IST" name="tearDown" finished-at="2026-08-26T10:14:02 IST" duration-ms="896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS038_verifyComeJoinUsAndCareersNavigation status=SUCCESS method=TS038_JoinUsTest.TS038_verifyComeJoinUsAndCareersNavigation()[pri:0, instance:Tests.TS038_JoinUsTest@cad498c] output=Starting TS038 - Verify Come Join Us and Careers navigation]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS038_JoinUsTest -->
+      <class name="Tests.TS039_JobOpeningsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS039_JobOpeningsTest@1e6454ec]" started-at="2026-08-26T10:14:02 IST" name="setUp" finished-at="2026-08-26T10:14:05 IST" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS039_verifyJobOpeningsNavigation()[pri:0, instance:Tests.TS039_JobOpeningsTest@1e6454ec]" started-at="2026-08-26T10:14:05 IST" name="TS039_verifyJobOpeningsNavigation" finished-at="2026-08-26T10:14:09 IST" duration-ms="3865" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS039 - Verify Job Openings navigation]]>
+            </line>
+            <line>
+              <![CDATA[Darwinbox Careers Home opened]]>
+            </line>
+            <line>
+              <![CDATA[Open Jobs button verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked We Have Open Jobs]]>
+            </line>
+            <line>
+              <![CDATA[All Jobs page opened successfully]]>
+            </line>
+            <line>
+              <![CDATA[Job search bar verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Searched for job: Business Development Executive]]>
+            </line>
+            <line>
+              <![CDATA[Job is available: Business Development Executive]]>
+            </line>
+            <line>
+              <![CDATA[View and Apply button verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[TS039 Passed - Job openings navigation, search and availability verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS039_verifyJobOpeningsNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS039_JobOpeningsTest@1e6454ec]" started-at="2026-08-26T10:14:09 IST" name="tearDown" finished-at="2026-08-26T10:14:09 IST" duration-ms="745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS039_verifyJobOpeningsNavigation status=SUCCESS method=TS039_JobOpeningsTest.TS039_verifyJobOpeningsNavigation()[pri:0, instance:Tests.TS039_JobOpeningsTest@1e6454ec] output=Starting TS039 - Verify Job Openings navigation]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS039_JobOpeningsTest -->
+      <class name="Tests.TS033_AboutUsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS033_AboutUsPageTest@625732]" started-at="2026-08-26T10:13:28 IST" name="setUp" finished-at="2026-08-26T10:13:31 IST" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS033_verifyAboutUsPageLoads()[pri:0, instance:Tests.TS033_AboutUsPageTest@625732]" started-at="2026-08-26T10:13:31 IST" name="TS033_verifyAboutUsPageLoads" finished-at="2026-08-26T10:13:36 IST" duration-ms="4718" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS033 - Verify About Us page loads]]>
+            </line>
+            <line>
+              <![CDATA[About Us page opened]]>
+            </line>
+            <line>
+              <![CDATA[TS033 Passed - About Us page loaded successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS033_verifyAboutUsPageLoads -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS033_AboutUsPageTest@625732]" started-at="2026-08-26T10:13:36 IST" name="tearDown" finished-at="2026-08-26T10:13:37 IST" duration-ms="1081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS033_verifyAboutUsPageLoads status=SUCCESS method=TS033_AboutUsPageTest.TS033_verifyAboutUsPageLoads()[pri:0, instance:Tests.TS033_AboutUsPageTest@625732] output=Starting TS033 - Verify About Us page loads]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS033_AboutUsPageTest -->
+      <class name="Tests.TS041_ContactInformationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS041_ContactInformationTest@2accdbb5]" started-at="2026-08-26T10:14:09 IST" name="setUp" finished-at="2026-08-26T10:14:12 IST" duration-ms="2655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS041_verifyContactInformation()[pri:0, instance:Tests.TS041_ContactInformationTest@2accdbb5]" started-at="2026-08-26T10:14:12 IST" name="TS041_verifyContactInformation" finished-at="2026-08-26T10:14:17 IST" duration-ms="5031" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS041 - Verify Contact Information on About Us page]]>
+            </line>
+            <line>
+              <![CDATA[Unacademy About Us page opened]]>
+            </line>
+            <line>
+              <![CDATA[Public relations section verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Press email verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Contact us section verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[Help email verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[TS041 Passed - Contact information verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS041_verifyContactInformation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS041_ContactInformationTest@2accdbb5]" started-at="2026-08-26T10:14:17 IST" name="tearDown" finished-at="2026-08-26T10:14:18 IST" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS041_verifyContactInformation status=SUCCESS method=TS041_ContactInformationTest.TS041_verifyContactInformation()[pri:0, instance:Tests.TS041_ContactInformationTest@2accdbb5] output=Starting TS041 - Verify Contact Information on About Us page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS041_ContactInformationTest -->
+      <class name="Tests.TS036_MissionImpactTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS036_MissionImpactTest@51dcb805]" started-at="2026-08-26T10:13:37 IST" name="setUp" finished-at="2026-08-26T10:13:40 IST" duration-ms="2890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS036_verifyMissionAndImpact()[pri:0, instance:Tests.TS036_MissionImpactTest@51dcb805]" started-at="2026-08-26T10:13:40 IST" name="TS036_verifyMissionAndImpact" finished-at="2026-08-26T10:13:44 IST" duration-ms="4414" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS036 - Verify Mission & Impact section]]>
+            </line>
+            <line>
+              <![CDATA[About Us page opened]]>
+            </line>
+            <line>
+              <![CDATA[Mission & Impact heading verified]]>
+            </line>
+            <line>
+              <![CDATA[Mission description verified]]>
+            </line>
+            <line>
+              <![CDATA[Active Learners verified]]>
+            </line>
+            <line>
+              <![CDATA[Top Educators verified]]>
+            </line>
+            <line>
+              <![CDATA[TS036 Passed - Mission & Impact section verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS036_verifyMissionAndImpact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS036_MissionImpactTest@51dcb805]" started-at="2026-08-26T10:13:44 IST" name="tearDown" finished-at="2026-08-26T10:13:45 IST" duration-ms="1348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS036_verifyMissionAndImpact status=SUCCESS method=TS036_MissionImpactTest.TS036_verifyMissionAndImpact()[pri:0, instance:Tests.TS036_MissionImpactTest@51dcb805] output=Starting TS036 - Verify Mission & Impact section]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS036_MissionImpactTest -->
+      <class name="Tests.TS037_AchievementsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TS037_AchievementsTest@66498326]" started-at="2026-08-26T10:13:45 IST" name="setUp" finished-at="2026-08-26T10:13:48 IST" duration-ms="2673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TS037_verifyCompanyAchievements()[pri:0, instance:Tests.TS037_AchievementsTest@66498326]" started-at="2026-08-26T10:13:48 IST" name="TS037_verifyCompanyAchievements" finished-at="2026-08-26T10:13:53 IST" duration-ms="4654" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TS037 - Verify Company Achievements / Journey]]>
+            </line>
+            <line>
+              <![CDATA[About Us page opened]]>
+            </line>
+            <line>
+              <![CDATA[2015 milestone verified]]>
+            </line>
+            <line>
+              <![CDATA[2015 milestone description verified]]>
+            </line>
+            <line>
+              <![CDATA[2017 milestone verified]]>
+            </line>
+            <line>
+              <![CDATA[2018 milestone verified]]>
+            </line>
+            <line>
+              <![CDATA[2020 milestone verified]]>
+            </line>
+            <line>
+              <![CDATA[TS037 Passed - Company achievements / journey verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TS037_verifyCompanyAchievements -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TS037_AchievementsTest@66498326]" started-at="2026-08-26T10:13:53 IST" name="tearDown" finished-at="2026-08-26T10:13:54 IST" duration-ms="709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS037_verifyCompanyAchievements status=SUCCESS method=TS037_AchievementsTest.TS037_verifyCompanyAchievements()[pri:0, instance:Tests.TS037_AchievementsTest@66498326] output=Starting TS037 - Verify Company Achievements / Journey]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TS037_AchievementsTest -->
+    </test> <!-- Unacademy About Us Tests -->
+    <test started-at="2026-08-26T10:14:18 IST" name="Unacademy Goal Tests" finished-at="2026-08-26T10:20:53 IST" duration-ms="395476">
+      <class name="Tests.LoggedInGoalChangeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoggedInGoalChangeTest@d29f28]" started-at="2026-08-26T10:18:34 IST" name="setUp" finished-at="2026-08-26T10:18:36 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoggedInUserCanChangeGoal()[pri:0, instance:Tests.LoggedInGoalChangeTest@d29f28]" started-at="2026-08-26T10:18:36 IST" name="verifyLoggedInUserCanChangeGoal" finished-at="2026-08-26T10:20:06 IST" duration-ms="89067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserCanChangeGoal -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoggedInGoalChangeTest@d29f28]" started-at="2026-08-26T10:20:06 IST" name="tearDown" finished-at="2026-08-26T10:20:07 IST" duration-ms="1614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoggedInUserCanChangeGoal status=SUCCESS method=LoggedInGoalChangeTest.verifyLoggedInUserCanChangeGoal()[pri:0, instance:Tests.LoggedInGoalChangeTest@d29f28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoggedInGoalChangeTest -->
+      <class name="Tests.BatchesCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.BatchesCardTest@223aa2f7]" started-at="2026-08-26T10:14:18 IST" name="setUp" finished-at="2026-08-26T10:14:21 IST" duration-ms="2965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBatchesCard()[pri:0, instance:Tests.BatchesCardTest@223aa2f7]" started-at="2026-08-26T10:14:21 IST" name="verifyBatchesCard" finished-at="2026-08-26T10:14:29 IST" duration-ms="7945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBatchesCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.BatchesCardTest@223aa2f7]" started-at="2026-08-26T10:14:29 IST" name="tearDown" finished-at="2026-08-26T10:14:30 IST" duration-ms="1069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBatchesCard status=SUCCESS method=BatchesCardTest.verifyBatchesCard()[pri:0, instance:Tests.BatchesCardTest@223aa2f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.BatchesCardTest -->
+      <class name="Tests.DoubtsAndSolutionsCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.DoubtsAndSolutionsCardTest@6bedbc4d]" started-at="2026-08-26T10:17:06 IST" name="setUp" finished-at="2026-08-26T10:17:09 IST" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDoubtsAndSolutionsCard()[pri:0, instance:Tests.DoubtsAndSolutionsCardTest@6bedbc4d]" started-at="2026-08-26T10:17:09 IST" name="verifyDoubtsAndSolutionsCard" finished-at="2026-08-26T10:17:16 IST" duration-ms="6735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDoubtsAndSolutionsCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.DoubtsAndSolutionsCardTest@6bedbc4d]" started-at="2026-08-26T10:17:16 IST" name="tearDown" finished-at="2026-08-26T10:17:17 IST" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDoubtsAndSolutionsCard status=SUCCESS method=DoubtsAndSolutionsCardTest.verifyDoubtsAndSolutionsCard()[pri:0, instance:Tests.DoubtsAndSolutionsCardTest@6bedbc4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.DoubtsAndSolutionsCardTest -->
+      <class name="Tests.PracticeCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PracticeCardTest@29d89d5d]" started-at="2026-08-26T10:20:18 IST" name="setUp" finished-at="2026-08-26T10:20:21 IST" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPracticeCard()[pri:0, instance:Tests.PracticeCardTest@29d89d5d]" started-at="2026-08-26T10:20:21 IST" name="verifyPracticeCard" finished-at="2026-08-26T10:20:30 IST" duration-ms="9196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPracticeCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PracticeCardTest@29d89d5d]" started-at="2026-08-26T10:20:30 IST" name="tearDown" finished-at="2026-08-26T10:20:31 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPracticeCard status=SUCCESS method=PracticeCardTest.verifyPracticeCard()[pri:0, instance:Tests.PracticeCardTest@29d89d5d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.PracticeCardTest -->
+      <class name="Tests.CoursesCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CoursesCardTest@20f5239f]" started-at="2026-08-26T10:16:40 IST" name="setUp" finished-at="2026-08-26T10:16:43 IST" duration-ms="3412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCoursesCard()[pri:0, instance:Tests.CoursesCardTest@20f5239f]" started-at="2026-08-26T10:16:43 IST" name="verifyCoursesCard" finished-at="2026-08-26T10:16:54 IST" duration-ms="10376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoursesCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.CoursesCardTest@20f5239f]" started-at="2026-08-26T10:16:54 IST" name="tearDown" finished-at="2026-08-26T10:16:55 IST" duration-ms="859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCoursesCard status=SUCCESS method=CoursesCardTest.verifyCoursesCard()[pri:0, instance:Tests.CoursesCardTest@20f5239f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CoursesCardTest -->
+      <class name="Tests.DirectDeepLinkTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.DirectDeepLinkTest@57af006c]" started-at="2026-08-26T10:16:55 IST" name="setUp" finished-at="2026-08-26T10:16:57 IST" duration-ms="2759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyScholarshipTestDeepLinkForGuestUser()[pri:0, instance:Tests.DirectDeepLinkTest@57af006c]" started-at="2026-08-26T10:16:57 IST" name="verifyScholarshipTestDeepLinkForGuestUser" finished-at="2026-08-26T10:17:05 IST" duration-ms="7947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScholarshipTestDeepLinkForGuestUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.DirectDeepLinkTest@57af006c]" started-at="2026-08-26T10:17:05 IST" name="tearDown" finished-at="2026-08-26T10:17:06 IST" duration-ms="812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyScholarshipTestDeepLinkForGuestUser status=SUCCESS method=DirectDeepLinkTest.verifyScholarshipTestDeepLinkForGuestUser()[pri:0, instance:Tests.DirectDeepLinkTest@57af006c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.DirectDeepLinkTest -->
+      <class name="Tests.PlaylistCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PlaylistCardTest@2fd1433e]" started-at="2026-08-26T10:20:07 IST" name="setUp" finished-at="2026-08-26T10:20:09 IST" duration-ms="2092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPlaylistCard()[pri:0, instance:Tests.PlaylistCardTest@2fd1433e]" started-at="2026-08-26T10:20:09 IST" name="verifyPlaylistCard" finished-at="2026-08-26T10:20:17 IST" duration-ms="7797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaylistCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PlaylistCardTest@2fd1433e]" started-at="2026-08-26T10:20:17 IST" name="tearDown" finished-at="2026-08-26T10:20:18 IST" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPlaylistCard status=SUCCESS method=PlaylistCardTest.verifyPlaylistCard()[pri:0, instance:Tests.PlaylistCardTest@2fd1433e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.PlaylistCardTest -->
+      <class name="Tests.CourseNavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CourseNavigationTest@193f604a]" started-at="2026-08-26T10:16:22 IST" name="setUp" finished-at="2026-08-26T10:16:25 IST" duration-ms="2871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIITJEEToNEETAndBackToExplore()[pri:0, instance:Tests.CourseNavigationTest@193f604a]" started-at="2026-08-26T10:16:25 IST" name="verifyIITJEEToNEETAndBackToExplore" finished-at="2026-08-26T10:16:39 IST" duration-ms="13833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIITJEEToNEETAndBackToExplore -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.CourseNavigationTest@193f604a]" started-at="2026-08-26T10:16:39 IST" name="tearDown" finished-at="2026-08-26T10:16:40 IST" duration-ms="976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyIITJEEToNEETAndBackToExplore status=SUCCESS method=CourseNavigationTest.verifyIITJEEToNEETAndBackToExplore()[pri:0, instance:Tests.CourseNavigationTest@193f604a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CourseNavigationTest -->
+      <class name="Tests.TopEducatorsCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TopEducatorsCardTest@212b5695]" started-at="2026-08-26T10:20:40 IST" name="setUp" finished-at="2026-08-26T10:20:44 IST" duration-ms="3251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopEducatorsCard()[pri:0, instance:Tests.TopEducatorsCardTest@212b5695]" started-at="2026-08-26T10:20:44 IST" name="verifyTopEducatorsCard" finished-at="2026-08-26T10:20:52 IST" duration-ms="8727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTopEducatorsCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TopEducatorsCardTest@212b5695]" started-at="2026-08-26T10:20:52 IST" name="tearDown" finished-at="2026-08-26T10:20:53 IST" duration-ms="897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTopEducatorsCard status=SUCCESS method=TopEducatorsCardTest.verifyTopEducatorsCard()[pri:0, instance:Tests.TopEducatorsCardTest@212b5695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TopEducatorsCardTest -->
+      <class name="Tests.GoalPersistenceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.GoalPersistenceTest@932bc4a]" started-at="2026-08-26T10:17:17 IST" name="setUp" finished-at="2026-08-26T10:17:19 IST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyGoalIsRetainedAfterLogoutAndRelogin()[pri:0, instance:Tests.GoalPersistenceTest@932bc4a]" started-at="2026-08-26T10:17:19 IST" name="verifyGoalIsRetainedAfterLogoutAndRelogin" finished-at="2026-08-26T10:18:32 IST" duration-ms="72607" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (814, 789)
+  (Session info: MicrosoftEdge=151.0.4129.101)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fc7a543bb260ff77c0064be9ce7d50ee, clickElement {id=f.42351980F86550E473AF9001938FF084.d.A775652C2A6B3A107FB1B9BE41DC94FB.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 13764, ms:edgeOptions: {debuggerAddress: localhost:51850}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51850/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fc7a543bb260ff77c0064be9ce7d50ee)] -> xpath: //*[@id='MIBRP']/div/div[2]/div]
+Session ID: fc7a543bb260ff77c0064be9ce7d50ee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (814, 789)
+  (Session info: MicrosoftEdge=151.0.4129.101)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fc7a543bb260ff77c0064be9ce7d50ee, clickElement {id=f.42351980F86550E473AF9001938FF084.d.A775652C2A6B3A107FB1B9BE41DC94FB.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 13764, ms:edgeOptions: {debuggerAddress: localhost:51850}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51850/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fc7a543bb260ff77c0064be9ce7d50ee)] -> xpath: //*[@id='MIBRP']/div/div[2]/div]
+Session ID: fc7a543bb260ff77c0064be9ce7d50ee
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Tests.GoalPersistenceTest.verifyGoalIsRetainedAfterLogoutAndRelogin(GoalPersistenceTest.java:123)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoalIsRetainedAfterLogoutAndRelogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.GoalPersistenceTest@932bc4a]" started-at="2026-08-26T10:18:32 IST" name="tearDown" finished-at="2026-08-26T10:18:34 IST" duration-ms="1588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGoalIsRetainedAfterLogoutAndRelogin status=FAILURE method=GoalPersistenceTest.verifyGoalIsRetainedAfterLogoutAndRelogin()[pri:0, instance:Tests.GoalPersistenceTest@932bc4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.GoalPersistenceTest -->
+      <class name="Tests.TestSeriesCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TestSeriesCardTest@3514a4c0]" started-at="2026-08-26T10:20:31 IST" name="setUp" finished-at="2026-08-26T10:20:33 IST" duration-ms="2476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTestSeriesCard()[pri:0, instance:Tests.TestSeriesCardTest@3514a4c0]" started-at="2026-08-26T10:20:33 IST" name="verifyTestSeriesCard" finished-at="2026-08-26T10:20:39 IST" duration-ms="6340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestSeriesCard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.TestSeriesCardTest@3514a4c0]" started-at="2026-08-26T10:20:39 IST" name="tearDown" finished-at="2026-08-26T10:20:40 IST" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTestSeriesCard status=SUCCESS method=TestSeriesCardTest.verifyTestSeriesCard()[pri:0, instance:Tests.TestSeriesCardTest@3514a4c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestSeriesCardTest -->
+      <class name="Tests.AddRemoveGoalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AddRemoveGoalTest@6d3a388c]" started-at="2026-08-26T10:14:30 IST" name="setUp" finished-at="2026-08-26T10:14:32 IST" duration-ms="2566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserCanAddAndRemoveGoal()[pri:0, instance:Tests.AddRemoveGoalTest@6d3a388c]" started-at="2026-08-26T10:14:32 IST" name="verifyUserCanAddAndRemoveGoal" finished-at="2026-08-26T10:16:20 IST" duration-ms="107977" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[3]/div[3]/ul/div/div/li[2]/p (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 1316, ms:edgeOptions: {debuggerAddress: localhost:62784}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62784/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e176758307f86941bd4c947ed81c8df]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[3]/div[3]/ul/div/div/li[2]/p (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.101, fedcm:accounts: true, goog:processID: 1316, ms:edgeOptions: {debuggerAddress: localhost:62784}, msedge: {msedgedriverVersion: 151.0.4129.101 (cc1d9f4080f..., userDataDir: C:\Users\BALLA~1.THA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62784/devtoo..., se:cdpVersion: 151.0.4129.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e176758307f86941bd4c947ed81c8df
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Tests.AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal(AddRemoveGoalTest.java:137)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddAndRemoveGoal -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.AddRemoveGoalTest@6d3a388c]" started-at="2026-08-26T10:16:20 IST" name="tearDown" finished-at="2026-08-26T10:16:22 IST" duration-ms="1943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddAndRemoveGoal status=FAILURE method=AddRemoveGoalTest.verifyUserCanAddAndRemoveGoal()[pri:0, instance:Tests.AddRemoveGoalTest@6d3a388c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AddRemoveGoalTest -->
+    </test> <!-- Unacademy Goal Tests -->
+    <test started-at="2026-08-26T10:20:53 IST" name="Public Smoke Tests" finished-at="2026-08-26T10:21:45 IST" duration-ms="51671">
+      <class name="Tests.SubscriptionPlanTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.SubscriptionPlanTest@7ea9e1e2]" started-at="2026-08-26T10:21:29 IST" name="setUp" finished-at="2026-08-26T10:21:32 IST" duration-ms="3274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="subscriptionPlansAreDisplayed()[pri:0, instance:Tests.SubscriptionPlanTest@7ea9e1e2]" started-at="2026-08-26T10:21:32 IST" name="subscriptionPlansAreDisplayed" description="Verify Plus, Iconic and Iconic Pro subscription plans" finished-at="2026-08-26T10:21:43 IST" duration-ms="11627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscriptionPlansAreDisplayed -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.SubscriptionPlanTest@7ea9e1e2]" started-at="2026-08-26T10:21:43 IST" name="tearDown" finished-at="2026-08-26T10:21:45 IST" duration-ms="1540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=subscriptionPlansAreDisplayed status=SUCCESS method=SubscriptionPlanTest.subscriptionPlansAreDisplayed()[pri:0, instance:Tests.SubscriptionPlanTest@7ea9e1e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.SubscriptionPlanTest -->
+      <class name="Tests.GoalSmokeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.GoalSmokeTest@6babf3bf]" started-at="2026-08-26T10:20:53 IST" name="setUp" finished-at="2026-08-26T10:21:07 IST" duration-ms="13842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="goalPageAndBatchesLoad()[pri:0, instance:Tests.GoalSmokeTest@6babf3bf]" started-at="2026-08-26T10:21:07 IST" name="goalPageAndBatchesLoad" finished-at="2026-08-26T10:21:13 IST" duration-ms="6283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goalPageAndBatchesLoad -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.GoalSmokeTest@6babf3bf]" started-at="2026-08-26T10:21:13 IST" name="tearDown" finished-at="2026-08-26T10:21:16 IST" duration-ms="2085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=goalPageAndBatchesLoad status=SUCCESS method=GoalSmokeTest.goalPageAndBatchesLoad()[pri:0, instance:Tests.GoalSmokeTest@6babf3bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.GoalSmokeTest -->
+      <class name="Tests.EducatorsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.EducatorsTest@3059cbc]" started-at="2026-08-26T10:21:16 IST" name="setUp" finished-at="2026-08-26T10:21:19 IST" duration-ms="3425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="educatorsPageLoadsAndScrolls()[pri:0, instance:Tests.EducatorsTest@3059cbc]" started-at="2026-08-26T10:21:19 IST" name="educatorsPageLoadsAndScrolls" finished-at="2026-08-26T10:21:28 IST" duration-ms="8561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- educatorsPageLoadsAndScrolls -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.EducatorsTest@3059cbc]" started-at="2026-08-26T10:21:28 IST" name="tearDown" finished-at="2026-08-26T10:21:29 IST" duration-ms="1023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=educatorsPageLoadsAndScrolls status=SUCCESS method=EducatorsTest.educatorsPageLoadsAndScrolls()[pri:0, instance:Tests.EducatorsTest@3059cbc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.EducatorsTest -->
+    </test> <!-- Public Smoke Tests -->
+    <test started-at="2026-08-26T10:21:45 IST" name="Payment Matrix - Dummy Stub" finished-at="2026-08-26T10:22:20 IST" duration-ms="35197">
+      <class name="Tests.PaymentMatrixTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:45 IST" name="setUp" finished-at="2026-08-26T10:21:49 IST" duration-ms="3529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:49 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:21:50 IST" duration-ms="1306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC062_UPI]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPI]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:50 IST" name="tearDown" finished-at="2026-08-26T10:21:50 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:50 IST" name="setUp" finished-at="2026-08-26T10:21:54 IST" duration-ms="3526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:54 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:21:55 IST" duration-ms="1280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC063_DebitCard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DEBIT_CARD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:55 IST" name="tearDown" finished-at="2026-08-26T10:21:56 IST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:56 IST" name="setUp" finished-at="2026-08-26T10:21:59 IST" duration-ms="3101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:21:59 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:22:00 IST" duration-ms="1509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC064_CreditCard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CREDIT_CARD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:00 IST" name="tearDown" finished-at="2026-08-26T10:22:01 IST" duration-ms="430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:01 IST" name="setUp" finished-at="2026-08-26T10:22:03 IST" duration-ms="2715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:03 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:22:05 IST" duration-ms="1346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC065_NetBanking]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NET_BANKING]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:05 IST" name="tearDown" finished-at="2026-08-26T10:22:05 IST" duration-ms="455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:05 IST" name="setUp" finished-at="2026-08-26T10:22:08 IST" duration-ms="3174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:08 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:22:10 IST" duration-ms="1298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC066_InvalidCard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INVALID_CARD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[INVALID_DETAILS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:10 IST" name="tearDown" finished-at="2026-08-26T10:22:10 IST" duration-ms="425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:10 IST" name="setUp" finished-at="2026-08-26T10:22:13 IST" duration-ms="2947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:13 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:22:14 IST" duration-ms="1521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC067_InsufficientBalance]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INSUFFICIENT_FUNDS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[INSUFFICIENT_FUNDS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:14 IST" name="tearDown" finished-at="2026-08-26T10:22:15 IST" duration-ms="424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:15 IST" name="setUp" finished-at="2026-08-26T10:22:18 IST" duration-ms="3551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:18 IST" name="paymentScenario" data-provider="payments" finished-at="2026-08-26T10:22:20 IST" duration-ms="1290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC068_NetworkInterruption]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NETWORK_FAILURE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NETWORK_FAILURE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentScenario -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e]" started-at="2026-08-26T10:22:20 IST" name="tearDown" finished-at="2026-08-26T10:22:20 IST" duration-ms="506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentScenario status=SUCCESS method=PaymentMatrixTest.paymentScenario(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.PaymentMatrixTest@1e683a3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.PaymentMatrixTest -->
+    </test> <!-- Payment Matrix - Dummy Stub -->
+  </suite> <!-- Unacademy Master Automation Suite -->
 </testng-results>
