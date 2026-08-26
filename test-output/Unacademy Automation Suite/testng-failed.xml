@@ -4,15 +4,34 @@
   <listeners>
     <listener class-name="Listeners.ExtentTestNGListener"/>
   </listeners>
-  <test thread-count="5" name="Unacademy TestNG Tests(failed)">
+  <test thread-count="5" name="Unacademy Login and Signup Tests(failed)">
     <classes>
-      <class name="Tests.TS036_MissionImpactTest">
+      <class name="Runners.TestRunner">
         <methods>
-          <include name="TS036_verifyMissionAndImpact"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="8 15"/>
+          <include name="finishReport"/>
+        </methods>
+      </class> <!-- Runners.TestRunner -->
+    </classes>
+  </test> <!-- Unacademy Login and Signup Tests(failed) -->
+  <test thread-count="5" name="Unacademy Goal tests(failed)">
+    <classes>
+      <class name="Tests.AddRemoveGoalTest">
+        <methods>
+          <include name="verifyUserCanAddAndRemoveGoal"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.TS036_MissionImpactTest -->
+      </class> <!-- Tests.AddRemoveGoalTest -->
+      <class name="Tests.GoalPersistenceTest">
+        <methods>
+          <include name="verifyGoalIsRetainedAfterLogoutAndRelogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GoalPersistenceTest -->
     </classes>
-  </test> <!-- Unacademy TestNG Tests(failed) -->
+  </test> <!-- Unacademy Goal tests(failed) -->
 </suite> <!-- Failed suite [Unacademy Automation Suite] -->

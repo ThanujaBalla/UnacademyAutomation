@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  Unacademy About Us Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Unacademy About Us Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 26 10:13:28 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49559 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.TS041_ContactInformationTest.TS041_verifyContactInformation()'><b>TS041_verifyContactInformation</b><br>Test class: Tests.TS041_ContactInformationTest<br/>
+<a href="#Output-660387727" onClick='toggleBox("Output-660387727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-660387727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-660387727">
+Starting TS041 - Verify Contact Information on About Us page<br/>
+Unacademy About Us page opened<br/>
+Public relations section verified successfully<br/>
+Press email verified successfully<br/>
+Contact us section verified successfully<br/>
+Help email verified successfully<br/>
+TS041 Passed - Contact information verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Tests.TS041_ContactInformationTest@2accdbb5</td></tr>
+<tr>
+<td title='Tests.TS033_AboutUsPageTest.TS033_verifyAboutUsPageLoads()'><b>TS033_verifyAboutUsPageLoads</b><br>Test class: Tests.TS033_AboutUsPageTest<br/>
+<a href="#Output-892816419" onClick='toggleBox("Output-892816419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892816419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892816419">
+Starting TS033 - Verify About Us page loads<br/>
+About Us page opened<br/>
+TS033 Passed - About Us page loaded successfully<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Tests.TS033_AboutUsPageTest@625732</td></tr>
+<tr>
+<td title='Tests.TS038_JoinUsTest.TS038_verifyComeJoinUsAndCareersNavigation()'><b>TS038_verifyComeJoinUsAndCareersNavigation</b><br>Test class: Tests.TS038_JoinUsTest<br/>
+<a href="#Output-287807329" onClick='toggleBox("Output-287807329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-287807329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-287807329">
+Starting TS038 - Verify Come Join Us and Careers navigation<br/>
+About Us page opened<br/>
+COME JOIN US section verified successfully<br/>
+Clicked See open positions<br/>
+Careers page opened successfully<br/>
+TS038 Passed - Careers page and View all job openings verified<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Tests.TS038_JoinUsTest@cad498c</td></tr>
+<tr>
+<td title='Tests.TS039_JobOpeningsTest.TS039_verifyJobOpeningsNavigation()'><b>TS039_verifyJobOpeningsNavigation</b><br>Test class: Tests.TS039_JobOpeningsTest<br/>
+<a href="#Output-817760343" onClick='toggleBox("Output-817760343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-817760343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-817760343">
+Starting TS039 - Verify Job Openings navigation<br/>
+Darwinbox Careers Home opened<br/>
+Open Jobs button verified successfully<br/>
+Clicked We Have Open Jobs<br/>
+All Jobs page opened successfully<br/>
+Job search bar verified successfully<br/>
+Searched for job: Business Development Executive<br/>
+Job is available: Business Development Executive<br/>
+View and Apply button verified successfully<br/>
+TS039 Passed - Job openings navigation, search and availability verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Tests.TS039_JobOpeningsTest@1e6454ec</td></tr>
+<tr>
+<td title='Tests.TS037_AchievementsTest.TS037_verifyCompanyAchievements()'><b>TS037_verifyCompanyAchievements</b><br>Test class: Tests.TS037_AchievementsTest<br/>
+<a href="#Output-610357179" onClick='toggleBox("Output-610357179", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-610357179" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-610357179">
+Starting TS037 - Verify Company Achievements / Journey<br/>
+About Us page opened<br/>
+2015 milestone verified<br/>
+2015 milestone description verified<br/>
+2017 milestone verified<br/>
+2018 milestone verified<br/>
+2020 milestone verified<br/>
+TS037 Passed - Company achievements / journey verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Tests.TS037_AchievementsTest@66498326</td></tr>
+<tr>
+<td title='Tests.TS036_MissionImpactTest.TS036_verifyMissionAndImpact()'><b>TS036_verifyMissionAndImpact</b><br>Test class: Tests.TS036_MissionImpactTest<br/>
+<a href="#Output-158503919" onClick='toggleBox("Output-158503919", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-158503919" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-158503919">
+Starting TS036 - Verify Mission & Impact section<br/>
+About Us page opened<br/>
+Mission & Impact heading verified<br/>
+Mission description verified<br/>
+Active Learners verified<br/>
+Top Educators verified<br/>
+TS036 Passed - Mission & Impact section verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Tests.TS036_MissionImpactTest@51dcb805</td></tr>
+</table><p>
+</body>
+</html>

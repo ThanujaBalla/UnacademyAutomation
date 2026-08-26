@@ -1,22 +1,238 @@
 {
+  "TC001 - Verify joining Unacademy with valid mobile number and valid OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:57:49.972844400",
+    "screenshot" : "Screenshots\\TC001_-_Verify_joining_Unacademy_with_valid_mobile_number_and_valid_OTP.png"
+  },
+  "TC013A - Verify login with invalid mobile" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:53:34.573932500",
+    "screenshot" : "Screenshots\\TC013A_-_Verify_login_with_invalid_mobile.png"
+  },
   "TS033_AboutUsPageTest" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-22T17:33:59.868153800",
+    "lastRun" : "2026-08-26T10:13:36.629211200",
     "screenshot" : "Screenshots\\TS033_AboutUsPageTest.png"
-  },
-  "TS036_MissionImpactTest" : {
-    "status" : "FAIL",
-    "lastRun" : "2026-08-22T17:41:02.645798600",
-    "screenshot" : "Screenshots\\TS036_MissionImpactTest.png"
   },
   "AddRemoveGoalTest" : {
     "status" : "FAIL",
-    "lastRun" : "2026-08-22T18:05:30.130381600",
+    "lastRun" : "2026-08-26T10:16:21.092160",
     "screenshot" : "Screenshots\\AddRemoveGoalTest.png"
+  },
+  "GoalSmokeTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:21:14.000747800"
+  },
+  "PaymentMatrixTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:22:20.253399100"
+  },
+  "TC020_SearchValidCourse" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:03:23.463224300",
+    "screenshot" : "Screenshots\\TC020_SearchValidCourse.png"
   },
   "BatchesCardTest" : {
     "status" : "PASS",
-    "lastRun" : "2026-08-22T18:08:29.389018",
+    "lastRun" : "2026-08-26T10:14:29.548737500",
     "screenshot" : "Screenshots\\BatchesCardTest.png"
+  },
+  "TC021_SearchValidInstructor" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:04:29.212372800",
+    "screenshot" : "Screenshots\\TC021_SearchValidInstructor.png"
+  },
+  "TC011 - Login with valid mobile number and valid OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:52:57.165080",
+    "screenshot" : "Screenshots\\TC011_-_Login_with_valid_mobile_number_and_valid_OTP.png"
+  },
+  "TC012 - Login with valid email id and otp" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:53:23.517935100",
+    "screenshot" : "Screenshots\\TC012_-_Login_with_valid_email_id_and_otp.png"
+  },
+  "TC013B - Verify login with invalid email" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:53:49.001015900",
+    "screenshot" : "Screenshots\\TC013B_-_Verify_login_with_invalid_email.png"
+  },
+  "TC014 - Verify login with invalid OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:54:02.574083200",
+    "screenshot" : "Screenshots\\TC014_-_Verify_login_with_invalid_OTP.png"
+  },
+  "TC015 - Verify login with expired OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:55:14.592326200",
+    "screenshot" : "Screenshots\\TC015_-_Verify_login_with_expired_OTP.png"
+  },
+  "TC017 - Login from Laptop TC018 - verify login from geographical location" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:55:44.703555600",
+    "screenshot" : "Screenshots\\TC017_-_Login_from_Laptop_TC018_-_verify_login_from_geographical_location.png"
+  },
+  "TC019 - Verify Successfull logout" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-26T09:57:17.675500800",
+    "screenshot" : "Screenshots\\TC019_-_Verify_Successfull_logout.png"
+  },
+  "TC002 - Verify joining with invalid mobile number" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:58:01.064087600",
+    "screenshot" : "Screenshots\\TC002_-_Verify_joining_with_invalid_mobile_number.png"
+  },
+  "TC003 - Verify login with invalid OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:58:12.732316200",
+    "screenshot" : "Screenshots\\TC003_-_Verify_login_with_invalid_OTP.png"
+  },
+  "TC004- Verify joining with expired OTP" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:59:24.261389500",
+    "screenshot" : "Screenshots\\TC004-_Verify_joining_with_expired_OTP.png"
+  },
+  "TC006 &TC007 - Verify sign up from Laptop using Chrome" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T09:59:53.070253100",
+    "screenshot" : "Screenshots\\TC006__TC007_-_Verify_sign_up_from_Laptop_using_Chrome.png"
+  },
+  "TC008 - Verify sign up using Firefox" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:00:22.604673900",
+    "screenshot" : "Screenshots\\TC008_-_Verify_sign_up_using_Firefox.png"
+  },
+  "TC009 - Verify sign up using Edge" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:00:51.803481900",
+    "screenshot" : "Screenshots\\TC009_-_Verify_sign_up_using_Edge.png"
+  },
+  "TC010 - Verify first-time joining Unacademy with valid mobile number, OTP, name and state" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-26T10:02:14.763863300",
+    "screenshot" : "Screenshots\\TC010_-_Verify_first-time_joining_Unacademy_with_valid_mobile_number__OTP__name_and_state.png"
+  },
+  "TC023_SearchInvalidKeyword" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:05:41.225998200",
+    "screenshot" : "Screenshots\\TC023_SearchInvalidKeyword.png"
+  },
+  "TC024_EmptySearch" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:06:43.035094300",
+    "screenshot" : "Screenshots\\TC024_EmptySearch.png"
+  },
+  "TC025_SearchPartialKeyword" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:07:47.904668800",
+    "screenshot" : "Screenshots\\TC025_SearchPartialKeyword.png"
+  },
+  "TC026_TrendingEducators" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:08:49.068896500",
+    "screenshot" : "Screenshots\\TC026_TrendingEducators.png"
+  },
+  "TC027_RedirectToEducatorProfile" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:09:52.276371200",
+    "screenshot" : "Screenshots\\TC027_RedirectToEducatorProfile.png"
+  },
+  "TC028_SearchSpecialCharacters" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:10:57.837291400",
+    "screenshot" : "Screenshots\\TC028_SearchSpecialCharacters.png"
+  },
+  "TC030_SearchResultLoadTime" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:12:24.530159900",
+    "screenshot" : "Screenshots\\TC030_SearchResultLoadTime.png"
+  },
+  "TC031_ClearSearchNewSearch" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-26T10:13:26.967950800",
+    "screenshot" : "Screenshots\\TC031_ClearSearchNewSearch.png"
+  },
+  "TS036_MissionImpactTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:13:45.009172300",
+    "screenshot" : "Screenshots\\TS036_MissionImpactTest.png"
+  },
+  "TS037_AchievementsTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:13:53.500927400",
+    "screenshot" : "Screenshots\\TS037_AchievementsTest.png"
+  },
+  "TS038_JoinUsTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:14:01.955505700",
+    "screenshot" : "Screenshots\\TS038_JoinUsTest.png"
+  },
+  "TS039_JobOpeningsTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:14:09.247743",
+    "screenshot" : "Screenshots\\TS039_JobOpeningsTest.png"
+  },
+  "TS041_ContactInformationTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:14:17.790763600",
+    "screenshot" : "Screenshots\\TS041_ContactInformationTest.png"
+  },
+  "CourseNavigationTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:16:39.693363900",
+    "screenshot" : "Screenshots\\CourseNavigationTest.png"
+  },
+  "CoursesCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:16:54.457448600",
+    "screenshot" : "Screenshots\\CoursesCardTest.png"
+  },
+  "DirectDeepLinkTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:17:06.026332",
+    "screenshot" : "Screenshots\\DirectDeepLinkTest.png"
+  },
+  "DoubtsAndSolutionsCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:17:16.404437800",
+    "screenshot" : "Screenshots\\DoubtsAndSolutionsCardTest.png"
+  },
+  "GoalPersistenceTest" : {
+    "status" : "FAIL",
+    "lastRun" : "2026-08-26T10:18:32.671807800",
+    "screenshot" : "Screenshots\\GoalPersistenceTest.png"
+  },
+  "LoggedInGoalChangeTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:20:06.187184400",
+    "screenshot" : "Screenshots\\LoggedInGoalChangeTest.png"
+  },
+  "PlaylistCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:20:17.769704900",
+    "screenshot" : "Screenshots\\PlaylistCardTest.png"
+  },
+  "PracticeCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:20:30.473307200",
+    "screenshot" : "Screenshots\\PracticeCardTest.png"
+  },
+  "TestSeriesCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:20:40.227614800",
+    "screenshot" : "Screenshots\\TestSeriesCardTest.png"
+  },
+  "TopEducatorsCardTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:20:53.101727600",
+    "screenshot" : "Screenshots\\TopEducatorsCardTest.png"
+  },
+  "EducatorsTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:21:28.070147200"
+  },
+  "SubscriptionPlanTest" : {
+    "status" : "PASS",
+    "lastRun" : "2026-08-26T10:21:43.997182800"
   }
 }

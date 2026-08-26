@@ -2,6 +2,9 @@ package Base;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -10,144 +13,182 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.aventstack.extentreports.ExtentTest;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Tracing;
 
-import Listeners.ExtentTestNGListener;
+
+import Utilities.ConfigReader;
 import Utilities.DriverManager;
 import Utilities.ScreenShotUtility;
 import Utilities.TestResultManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseTest {
+public abstract class BaseTest {
 
-    protected WebDriver driver;
+	// Selenium Engine Objects
+	protected WebDriver driver;
 
-    @BeforeMethod
-    public void setUp() {
+	// Playwright Engine Objects
+	protected Playwright playwright;
+	protected Browser browser;
+	protected BrowserContext context;
+	protected Page page;
 
-        System.out.println("Starting browser...");
+	@BeforeMethod(alwaysRun = true)
+	public void setUp() {
 
-        WebDriverManager.edgedriver().setup();
+		if ("playwright".equalsIgnoreCase(getEngine())) {
+			setupPlaywright();
+		} else {
+			setupSelenium();
+		}
+	}
 
-        driver = new EdgeDriver();
+	protected String getEngine() {
+		return "selenium";
+	}
 
-        driver.manage().window().maximize();
+	private void setupSelenium() {
+		System.out.println("Starting Selenium Driver...");
+		WebDriverManager.edgedriver().setup();
+		driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		DriverManager.setDriver(driver);
+		System.out.println("Selenium Driver started successfully.");
+	}
 
-        driver.manage().timeouts()
-               .implicitlyWait(Duration.ofSeconds(10));
+	private void setupPlaywright() {
+		System.out.println("Starting Playwright Engine...");
+		playwright = Playwright.create();
+		BrowserType.LaunchOptions launch = new BrowserType.LaunchOptions().setHeadless(ConfigReader.bool("headless"))
+				.setSlowMo(Double.parseDouble(ConfigReader.getProperty("slowMo")));
 
-        DriverManager.setDriver(driver);
+		String b = ConfigReader.getProperty("browser").toLowerCase();
+		BrowserType type = playwright.chromium();
+		if ("chrome".equals(b))
+			launch.setChannel("chrome");
+		else if ("edge".equals(b))
+			launch.setChannel("msedge");
 
-        System.out.println("Browser started successfully.");
-    }
+		browser = type.launch(launch);
+		Browser.NewContextOptions options = new Browser.NewContextOptions().setViewportSize(1440, 900);
+		String authState = ConfigReader.getProperty("authState");
+		if (authState != null && !authState.isBlank() && Files.exists(Paths.get(authState))) {
+			options.setStorageStatePath(Paths.get(authState));
+		}
 
-    @AfterMethod
-    public void tearDown(ITestResult result) {
+		context = browser.newContext(options);
+		context.setDefaultTimeout(ConfigReader.integer("timeoutMs"));
+		page = context.newPage();
+		context.tracing().start(new Tracing.StartOptions().setScreenshots(true).setSnapshots(true).setSources(true));
+		System.out.println("Playwright Engine started successfully.");
+	}
 
-        String screenshotPath = null;
+	@AfterMethod(alwaysRun = true)
+	public void tearDown(ITestResult result) {
 
-        try {
+		String testName = result.getTestClass().getRealClass().getSimpleName();
 
-            if (driver != null) {
+		String status;
 
-                /*
-                 * 1. Get Java class name.
-                 *
-                 * Example:
-                 * TS033_AboutUsPageTest
-                 */
-                String testName =
-                        result.getTestClass()
-                              .getRealClass()
-                              .getSimpleName();
+		if (result.getStatus() == ITestResult.SUCCESS) {
 
-                System.out.println(
-                        "Test class: " + testName
-                );
+			status = "PASS";
 
-                /*
-                 * 2. Take screenshot
-                 */
-                screenshotPath =
-                        ScreenShotUtility.captureScreenshot(
-                                driver,
-                                testName
-                        );
+		} else if (result.getStatus() == ITestResult.FAILURE) {
 
-                System.out.println(
-                        "Screenshot saved: "
-                        + screenshotPath
-                );
+			status = "FAIL";
 
-                /*
-                 * 3. Determine test status
-                 */
-                String status;
+		} else {
 
-                if (result.getStatus() == ITestResult.SUCCESS) {
+			status = "SKIP";
+		}
 
-                    status = "PASS";
+		/*
+		 * ============================ PLAYWRIGHT ============================
+		 */
 
-                } else if (result.getStatus() == ITestResult.FAILURE) {
+		if (page != null) {
 
-                    status = "FAIL";
+			Path artifactDir = Paths.get("target", "artifacts");
 
-                } else {
+			try {
+				Files.createDirectories(artifactDir);
+			} catch (Exception ignored) {
+			}
 
-                    status = "SKIP";
-                }
+			String screenshotPath = null;
 
-                /*
-                 * 4. Store/update result in JSON
-                 */
-                String relativeScreenshotPath =
-                        "Screenshots"
-                        + File.separator
-                        + new File(screenshotPath).getName();
+			if (!result.isSuccess()) {
 
-                TestResultManager.updateResult(
-                        testName,
-                        status,
-                        relativeScreenshotPath
-                );
+				try {
 
-                /*
-                 * 5. Attach screenshot to Extent Report
-                 */
-                ExtentTest extentTest =
-                        ExtentTestNGListener.getTest();
+					Path screenshot = artifactDir.resolve(testName + ".png");
 
-                if (extentTest != null) {
+					page.screenshot(new Page.ScreenshotOptions().setPath(screenshot).setFullPage(true));
 
-                    String relativePath =
-                            ".."
-                            + File.separator
-                            + "Screenshots"
-                            + File.separator
-                            + new File(screenshotPath)
-                                    .getName();
+					screenshotPath = screenshot.toString();
 
-                    extentTest.addScreenCaptureFromPath(
-                            relativePath,
-                            "Test Screenshot"
-                    );
-                }
-            }
+				} catch (Exception e) {
 
-        } catch (IOException e) {
+					System.out.println("Playwright screenshot failed: " + e.getMessage());
+				}
+			}
 
-            System.out.println(
-                    "Screenshot/Report error: "
-                    + e.getMessage()
-            );
+			/*
+			 * Save Playwright result to JSON
+			 */
+			TestResultManager.updateResult(testName, status, screenshotPath);
 
-        } finally {
+			/*
+			 * Stop tracing
+			 */
+			try {
 
-            System.out.println("Closing browser...");
+				if (context != null) {
 
-            DriverManager.quitDriver();
+					context.tracing().stop(new Tracing.StopOptions().setPath(artifactDir.resolve(testName + ".zip")));
+				}
 
-            System.out.println("Browser closed.");
-        }
-    }
+			} catch (Exception ignored) {
+			}
+
+			try {
+
+				if (context != null) {
+					context.close();
+				}
+
+				if (browser != null) {
+					browser.close();
+				}
+				if (playwright != null) {
+					playwright.close();
+				}
+			} catch (Exception ignored) {
+			}
+		}
+
+		/*
+		 * ============================ SELENIUM ============================
+		 */
+
+		if (driver != null) {
+			try {
+				String screenshotPath = ScreenShotUtility.captureScreenshot(driver, testName);
+				String relativeScreenshotPath = "Screenshots" + File.separator + new File(screenshotPath).getName();
+				TestResultManager.updateResult(testName, status, relativeScreenshotPath);
+			} catch (IOException e) {
+				System.out.println("Screenshot/Report error: " + e.getMessage());
+			} finally {
+				DriverManager.quitDriver();
+			}
+		}
+
+	}
 }

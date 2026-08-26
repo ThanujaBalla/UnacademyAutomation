@@ -15,3 +15,11 @@ target/
 # OS
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
+
+
+# Local configuration - contains personal test data
+src/test/resources/config.properties
+=======
+/bin/
+>>>>>>> refs/remotes/origin/Amrutha

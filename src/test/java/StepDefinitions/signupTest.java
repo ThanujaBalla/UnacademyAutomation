@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import Pages.SignupPage;
+import Utilities.ConfigReader;
 import Utilities.DriverManager;
 
 import io.cucumber.java.en.And;
@@ -33,7 +34,7 @@ public class signupTest {
 
     @And("I enter a valid signup mobile number")
     public void i_enter_a_valid_signup_mobile_number() {
-        signupPage.enterMobileNumber("9493527869");
+        signupPage.enterMobileNumber(ConfigReader.getProperty("mobile_number"));
     }
 
 

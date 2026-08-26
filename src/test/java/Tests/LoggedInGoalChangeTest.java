@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Base.BaseTest;
+import Utilities.ConfigReader;
 
 public class LoggedInGoalChangeTest extends BaseTest {
 
@@ -59,7 +60,7 @@ public class LoggedInGoalChangeTest extends BaseTest {
                 ExpectedConditions.visibilityOfElementLocated(mobileInput)
         );
 
-        mobile.sendKeys("6383917450");
+        mobile.sendKeys(ConfigReader.getProperty("mobile_number"));
 
         // =========================================================
         // STEP 4: Click Login / Get OTP

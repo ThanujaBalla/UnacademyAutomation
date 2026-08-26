@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.AddRemoveGoalTest">
+      <class name="Tests.TC020_SearchValidCourse">
         <methods>
-          <include name="verifyUserCanAddAndRemoveGoal"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="searchSetup"/>
+          <include name="TC020_SearchValidCourse"/>
         </methods>
-      </class> <!-- Tests.AddRemoveGoalTest -->
+      </class> <!-- Tests.TC020_SearchValidCourse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,79 +1,96 @@
 package Listeners;
 
-import org.testng.ITestContext;
+import org.testng.IExecutionListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.aventstack.extentreports.ExtentTest;
-
 import Reports.CumulativeReportGenerator;
-import Reports.ExtentManager;
 
 public class ExtentTestNGListener
-        implements ITestListener {
+        implements ITestListener, IExecutionListener {
 
-    private static ThreadLocal<ExtentTest> test =
-            new ThreadLocal<>();
+    @Override
+    public void onExecutionStart() {
+
+        System.out.println(
+                "======================================"
+        );
+
+        System.out.println(
+                "TestNG execution started."
+        );
+
+        System.out.println(
+                "======================================"
+        );
+    }
+
+    @Override
+    public void onExecutionFinish() {
+
+        System.out.println(
+                "======================================"
+        );
+
+        System.out.println(
+                "Generating final cumulative Extent report..."
+        );
+
+        CumulativeReportGenerator.generateReport();
+
+        System.out.println(
+                "======================================"
+        );
+    }
+
+    /*
+     * These methods are intentionally empty.
+     *
+     * We do NOT create Extent entries here.
+     * TestResultManager + JSON is the source of truth.
+     */
 
     @Override
     public void onTestStart(ITestResult result) {
 
-        String testName =
-                result.getTestClass()
-                      .getRealClass()
-                      .getSimpleName();
-
-        /*
-         * Create a new Extent entry for the
-         * currently executing test.
-         *
-         * This will be the latest execution.
-         */
-        ExtentTest extentTest =
-                ExtentManager.getExtentReports()
-                        .createTest(testName);
-
-        test.set(extentTest);
-
-        extentTest.info(
-                "Test execution started."
+        System.out.println(
+                "Test started: "
+                + result.getTestClass()
+                        .getRealClass()
+                        .getSimpleName()
         );
     }
 
     @Override
-    public void onTestSuccess(
-            ITestResult result) {
+    public void onTestSuccess(ITestResult result) {
 
-        test.get().pass(
-                "Test passed successfully."
+        System.out.println(
+                "Test passed: "
+                + result.getTestClass()
+                        .getRealClass()
+                        .getSimpleName()
         );
     }
 
     @Override
-    public void onTestFailure(
-            ITestResult result) {
+    public void onTestFailure(ITestResult result) {
 
-        test.get().fail(
-                result.getThrowable()
+        System.out.println(
+                "Test failed: "
+                + result.getTestClass()
+                        .getRealClass()
+                        .getSimpleName()
         );
     }
 
     @Override
-    public void onTestSkipped(
-            ITestResult result) {
+    public void onTestSkipped(ITestResult result) {
 
-        test.get().skip(
-                "Test skipped."
+        System.out.println(
+                "Test skipped: "
+                + result.getTestClass()
+                        .getRealClass()
+                        .getSimpleName()
         );
-    }
-
-    @Override
-    public void onFinish(ITestContext context) {
-        CumulativeReportGenerator.generateReport();
-    }
-
-    public static ExtentTest getTest() {
-
-        return test.get();
     }
 }
