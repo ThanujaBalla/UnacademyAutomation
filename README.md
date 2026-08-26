@@ -777,24 +777,19 @@ The automation interacts with a live web application, so:
 
 ---
 
-# 👥 Contributors
+## 👥 Contributors & Module Ownership
 
-This project was developed collaboratively as a team automation project.
+This project was developed collaboratively as part of our Testing Training.  
+Each team member was responsible for automating and validating a specific functional area of the Unacademy platform.
 
-Contributors worked across different areas including:
-
-* Login and Signup automation
-* Search automation
-* Goal and Home page automation
-* About Us automation
-* Subscription and Payment testing
-* Playwright integration
-* Reporting
-* Framework utilities
-* TestNG/Cucumber integration
-
+| # | Contributor | GitHub Profile | Module / Area | Key Responsibilities |
+|---|---|---|---|---|
+| **1** | **Thanuja Balla** | [@ThanujaBalla](https://github.com/ThanujaBalla) | 🔐 **Sign Up & Login** | Automated the complete authentication journey including mobile-number signup, OTP-based login, signup across compatible devices, login using mobile number or email, login from different devices/locations, logout, and related positive and negative authentication scenarios. Integrated the authentication flows with the Cucumber, Selenium, TestNG and Page Object framework. |
+| **2** | **Dinesh Chandra** | [@DineshChandra0403](https://github.com/DineshChandra0403) | 🔎 **Search Module** | Automated course, instructor and learning-content search scenarios. Covered search suggestions, valid/invalid and partial searches, educator profile navigation, trending searches, special-character searches, clearing and reusing search, and search-result validation/performance scenarios. |
+| **3** | **Ilampooranan** | [@cyberpunk1105](https://github.com/cyberpunk1105) | 🎯 **Start Learning & Goal Management** | Automated competitive-exam course discovery and Goal management workflows, including browsing courses by exam category, adding and removing Goals, Goal persistence across refreshes/sessions, switching saved Goals, and navigation toward subscription from the saved Goal section. |
+| **4** | **Praveen** | [@praveen-dotnet-hyd](https://github.com/praveen-dotnet-hyd) | 🏢 **About Us** | Automated informational and navigation scenarios for the About Us section, covering the About Us page, mission and vision, company achievements, career/job openings, and contact information to validate the accessibility and completeness of key company information. |
+| **5** | **Amrutha** | [@amrutha-005](https://github.com/amrutha-005) | 💳 **Subscription & Payment** | Automated subscription and payment workflows including subscription-plan validation, preferred payment methods, secure payment-flow scenarios, active subscription details, renewal/upgrade workflows, and subscription cancellation/auto-renewal scenarios. Also contributed to the Playwright-based framework and related automation components. |
 ---
-
 # 🔗 Repository
 
 **GitHub Repository:**
